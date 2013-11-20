@@ -1,0 +1,212 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Secure Tax</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel ="stylesheet" href ="foundation.css">
+        <link rel ="stylesheet" href ="test.css">
+        <script src="js/vendor/jquery.js"></script>
+        <script>
+            var lock = null
+
+            $(document).ready(function() {
+                $("#login").click(function() {
+                    if (lock == null){
+                        lock = '#login-form'
+                        $($lock).toggle()
+                    }
+                });
+
+            });
+            $(document).ready(function() {
+                $("#signup").click(function() {
+                    $("#signup-form").toggle()
+                });
+
+            });
+            $(document).ready(function() {
+                $("#contact").click(function() {
+                    $("#contact-form").toggle()
+                });
+
+            });
+            $(document).ready(function() {
+                $("#cancel1").click(function() {
+                    $("#signup-form").hide()
+                });
+
+            });
+            $(document).ready(function() {
+                $("#cancel").click(function() {
+                    $("#login-form").hide()
+                });
+
+            });
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="row">
+                <div class="small-12 large-12 columns">
+                    <nav class="top-bar-section">
+                        <img src ="http://placehold.it/250 x 45&text=THE AUDITOR" />
+                        <ul class="inline-list right ">
+                            <li> <a id="login" href="#">LogIn</a></li>
+
+                            <li><a id="signup" href="#">SignUp</a></li>
+                            <li><a id ="contact"href="#">Contact Us</a></li>
+                        </ul>
+                        <div class="row">
+                            <div class="small-12 large-12 columns">
+                                <div id="login-form" style="display:none">
+                                    <form>
+                                        <div class="small-4 large-4 push-8 columns">
+                                            <input type="text" placeholder="User name">
+                                            <input type="password" placeholder="Password">
+                                            <button class="small" id="login-submit" type="submit">Submit</button>
+                                            <button class="small" type="submit" id="cancel">cancel</button><br>
+                                            <a href="#" id="login-submit" type="submit">Forgot Your Password?</a>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="small-12 large-12 columns">
+                                <div id="signup-form" style="display:none">
+                                    <form>
+                                        <div class="small-4 large-4 push-8 columns">
+
+
+
+                                            <input type="text" placeholder="User name">
+
+
+                                            <input type="password" placeholder="Password">
+
+                                            <input type="password" placeholder="Re-Enter Password">
+
+                                            <input type="text" placeholder="Mobile Number">
+                                            <button class="small" type="submit">Submit</button>
+                                            <button class="small" type="submit" id="cancel1">cancel</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="small-12 large-12 columns">
+                                <div id="contact-form" style="display:none">
+
+                                    <div class="small-4 large-4 push-8 columns">
+                                        <form>
+                                            <h6>The Auditor Office</h6>
+                                            <b>Address</b>
+                                            <address>
+                                                410 Tulsiani Chambers<br>
+                                                West Mambalam <br>
+                                                Chennai<br>
+                                                Mobile-No- +9198578633 <br>
+                                                Support Mail -- <a href="mailto:rajagopalan@edcellence.in">rajagopalan@edcellence.in</a>
+                                            </address>
+                                            <hr>
+                                            Follow Us
+                                            <a href="https://twitter.com/Ed_excellence">  <img src="http://placehold.it/30x30&text=t"></a>
+                                            <img src="http://placehold.it/30x30&text=f">
+                                            <img src="http://placehold.it/30x30&text=in">  
+                                        </form>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div> 
+            </div>
+
+            <div class="row">
+                <div class="small-12 large-12 columns menu" >
+                    <ul class="inline-list">
+                        <li><a href="#">Services</a>
+                        <li><a href="#">About</a>
+                        <li><a href="#">Link</a>
+                        <li><a href="#">Link</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="row" style="position:relative;left:14px;" >
+                <img src="http://placehold.it/968 x 100&text=Slide Show">
+            </div>
+
+
+        </header> 
+        <div class="row">
+            <div class="small-12 large-12 columns">
+
+                <p><b>What we are doing now?</b> </p>
+                <p>Pay tax is a project built on the idea to make the ever increasing tax filing headache a thing of the past.You should find this website very easy and intuitive to use.See the Process Flow</p>
+            </div>
+
+
+            <div class='small-6 large-6 columns'>
+                <h3>Features</h3>
+
+                <h5><a href='#'>First Feature</a></h5>
+                <p>Pay tax is a project built on the idea to make the ever increasing tax filing headache a thing of the past.You should find this website very easy and intuitive to use.See the Process Flow</p>
+
+
+                <h5><a href="#">Second Feature</a></h5>
+                <p>Pay tax is a project built on the idea to make the ever increasing tax filing headache a thing of the past.You should find this website very easy and intuitive to use.See the Process Flow</p>
+
+                <h5><a href="#">Third Feature</a></h5>
+                <p>Pay tax is a project built on the idea to make the ever increasing tax filing headache a thing of the past.You should find this website very easy and intuitive to use.See the Process Flow</p>
+
+                <p>   <a href="#">See More Features</a></p>
+
+
+            </div>
+
+            <div class='small-6 large-6 columns'>
+                <h3>Plans</h3>
+                <div class='small-2 large-2 columns' style='top:20px;position:relative;'>
+                    <img style='float:left' src='http://placehold.it/60x100'>
+                </div>
+                <div style='top:20px;position:relative'>
+                    <p>Pay tax is a project built on the idea to make the ever increasing tax filing headache a thing of the past.You should find this website very easy and intuitive to use.</p>
+                </div>
+                <div class='small-2 large-2 columns' style='top:60px;position:relative;'>
+                    <img style='float:left' src='http://placehold.it/60x100'>
+                </div>
+                <div style='top:60px;position:relative'>
+                    <p>Pay tax is a project built on the idea to make the ever increasing tax filing headache a thing of the past.You should find this website very easy and intuitive to use.</p>
+                </div>
+                <div class='small-2 large-2 columns' style='top:90px;position:relative;'>
+                    <img style='float:left;position:relative' src='http://placehold.it/60x100'>
+                </div>
+                <div style='top:90px;position:relative'>
+                    <p>Pay tax is a project built on the idea to make the ever increasing tax filing headache a thing of the past.You should find this website very easy and intuitive to use.</p>
+                    <p>   <a href="#">See More Plans </a></p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <footer>
+            <div class="row">
+                <hr>
+                <div class="small-12 large-12 columns">
+                    <p> © 2013 Pay Tax. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+
+</html>
