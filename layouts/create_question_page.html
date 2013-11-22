@@ -13,60 +13,81 @@ and open the template in the editor.
     <body>
         <header>
             <div class="row">
-            <div class="small-12 large-12 columns">
-                <nav class="top-bar-section">
-                    <img src ="http://placehold.it/250 x 45&text=sitename" />
-                    <ul class="inline-list right ">
-                        <li> <a href="#">Hello vino</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Logout</a></li>
-                    </ul>
- 
-                </nav>
-              </div>  
+                <div class="small-12 large-12 columns">
+                    <nav class="top-bar-section">
+                        <img src ="http://placehold.it/250 x 45&text=sitename"/>
+                        <ul class="inline-list right ">
+                            <li> Hello vino</li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="home.html">Logout</a></li>
+                        </ul>
+
+                    </nav>
+                </div>  
             </div>
-            
+
             <div class="row">
                 <div class="small-12 large-12 columns menu" >
                     <ul class="inline-list">
-                        <li><a href="#">Home</a>
-                        
-                        <li><a href="#">Create Question</a>
-                        <li>Points of Credit</li>
+                        <li><a href="customer_page_after_login.html">Home</a>
+
+                        <li><a href="create_question_page.html">Create Question</a>
+                        <li><a href="buy-points.html">Buy Points</a></li>
                     </ul>
                 </div>
+
             </div>
 
 
         </header>
-    
+
         <div class="row">
             <div class="small-12 large-12 columns">
+
+                <h5 style="text-align:center">Question</h5>
+                <div class="small-12 large12 columns">
+                    <label for="ask-question">Ask Question</label>
+                    <textarea placeholder="Enter your question here"></textarea>
+                </div>
                 <div class="small-6 large-6 columns">
-                    Post Your Question
-                    <>
-                    </div>t
-                <div class="small-6 large-6 columns">
-                    <button style="font-size:19px">Buy Credit Points Now</button>
+                    <label for="category"> Category</label>
+
+                    <select>  
+                        <option>Category 10 points</option>
+                        <option>Category 20 points</option>
+                        <option>Category 30 points</option>
+                        <option>Category 40 points</option>
+                        <option>Category 50 points</option>
+                    </select>
+                </div>
+                <div class="small-6 large-6 columns ">
+                    <label>Your Current Points</label>
+                    <div class="small-2 large-2 columns">
+                        <label>10</label>
+                    </div>
+                    <div class="pull-5 small-3 large-3 columns">
+                        <a href="#" style="text-decoration:underline;">Buy Points</a>
                     </div>
                 </div>
+                <div class="small-12 large-12 columns">
+                    <label for="file-upload" value="Choose file document">Select & upload file</label>
+
+                    <input type="file" multiple>
+
+
+                    <button class="small right-align inline">Upload</button>
+                </div>
+                <div class="small-12 large-12 columns" >
+                    <button class="small">Post Your Question</button>
+                </div>
+            </div>
             <hr>
-             <div class="small-6 columns">
-                 <label for="right-label" class="right label" style="font-size: 28px;border-radius:8px;">Post your Question</label>
-        </div>
-        <div class="small-6 columns">
-            <textarea  id="right-label" placeholder="type here.."></textarea>
-        </div>
-                
-                    <button style="position:relative;margin-left:440px;">Submit</button>
-                  
-            </div>
-         <footer>
-             <div class="row">
-            <div class="small-12 large-12 columns">
-                <p> © 2013 Pay Tax. All rights reserved.</p>
-            </div>
-                 </div>
-        </footer>
-</body>
+            <footer>
+                <div class="row">
+                    <div class="small-12 large-12 columns">
+                        <p> © 2013 Pay Tax. All rights reserved.</p>
+                    </div>
+                </div>
+            </footer>
+    </body>
 </html>
