@@ -1,18 +1,22 @@
 #question {
     text-decoration: underline;
 }
-a link {
+a {
     color:#66FFFF;
 }
-a:hover {
-text-decoration: underline;
-color:#E671AC;
-}
-    
+
+
 a:visited {
     color:#944D94;
-    
+
+}
+a:hover {
+
+    color:#E671AC;
 }
 .buy-points table {
     border:none;
+}
+label {
+    font-weight:bold;
 }

@@ -11,30 +11,50 @@ and open the template in the editor.
         <link rel ="stylesheet" href ="layout.css">
         <script src="js/vendor/custom.modernizr.js"></script>
         <script src="js/vendor/jquery.js"></script>
-        <script src="js/foundation.section.js"></script>
+         <script src="js/foundation/foundation.js"></script>
+        <script src="js/foundation/foundation.section.js"></script>
+        <script src="js/vendor/customer.js"></script>
         <script>
-            
-    $(document).ready(function () {
-      $("button").click(function () {
-          $(".fos").show()
-      });  
-        
-    });
+      document.write('<script src=/js/vendor/'
+        + ('__proto__' in {} ? 'zepto' : 'jquery')
+        + '.js><\/script>');
     </script>
-    </head>
-    <body>
-       <!-- Check for Zepto support, load jQuery if necessary -->
-<script>
-  document.write('<script src=/js/vendor/'
-    + ('__proto__' in {} ? 'zepto' : 'jquery')
-    + '.js><\/script>');
-</script>  
 
-    
-<button>Login</button>
-<div class="fos" style="display:none">
-    userName:<input style="width:20px" type="text">
-    </div>s
+         <script>
+    $(document).foundation();
+  </script>
+
+    </head>
+    <div class="small-4 large-4 columns">
+   <div class="section-container tabs" data-section>
+  <section class="active">
+    <p class="title" data-section-title><a href="#panel1">SignUp</a></p>
+    <div class="content" data-section-content>
+         
+                    <h4> Register Now</h4>
+                    <input type="text" placeholder="username">
+                    <input type="email" placeholder="Email Id">
+                    <input type="password" placeholder="password">
+                    <input type="password" placeholder="Re-Enter password">
+                    <button class="small">Sign Up</button>
+                   
+                
+      
+    </div>
+  </section>
+  <section>
+    <p class="title" data-section-title><a href="#panel2">Login</a></p>
+    <div class="content" data-section-content>
+     <input type="text" placeholder="username">
+     <input type="password" placeholder="password">
+     <button class="small">Log In</button>
+     
+    </div>
+  </section>
+</div>
+</div>
+    <body>
+       
    
 </body>
 </html>

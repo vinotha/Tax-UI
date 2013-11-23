@@ -9,7 +9,20 @@ and open the template in the editor.
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel ="stylesheet" href ="foundation.css">
         <link rel ="stylesheet" href ="layout.css">
+        <script src="js/vendor/custom.modernizr.js"></script>
         <script src="js/vendor/jquery.js"></script>
+         <script src="js/foundation/foundation.js"></script>
+        <script src="js/foundation/foundation.section.js"></script>
+        <script src="js/vendor/customer.js"></script>
+        <script>
+      document.write('<script src=/js/vendor/'
+        + ('__proto__' in {} ? 'zepto' : 'jquery')
+        + '.js><\/script>');
+    </script>
+
+         <script>
+    $(document).foundation();
+  </script>
     </head>
     <body>
         <header>
@@ -18,20 +31,9 @@ and open the template in the editor.
                     <div class="small-5 large-5 columns">
                         <img src ="http://placehold.it/250 x 45&text=THE AUDITOR" />
                     </div>
-                    <div class="small-3 large-3 columns ">
-                        <input type="text" placeholder="User name">
-                    </div>                
-                    <div class=" small-3 large-3  columns ">
-                        <input class="right" type="password" placeholder="Password">
-                    </div>
-                    <div class="small-1 large-1 columns">
-                        <a href="customer_page_after_login.html">       <button class="small" id="login-submit" type="submit">Login</button></a>
-                    </div>  
-                    <div class="small-5 large-5 pull-2 columns">
-                        <a href="#">Forgot your password?</a>
-                    </div>
+                   <hr>  
                 </div>
-                <hr>
+               
             </div>
 
 
@@ -43,8 +45,9 @@ and open the template in the editor.
                         <li><a href="#">Link</a>
                         <li><a href="#">Link</a>
                     </ul>
+                    <hr>
                 </div>
-                <hr>
+                
             </div>
 
 
@@ -72,16 +75,39 @@ and open the template in the editor.
 
                 </div>
                 <div class="small-6 large-6 columns">
-                    <h4> Register Now</h4>
+                    
+   <div class="section-container tabs" data-section>
+  <section class="active">
+    <p class="title" data-section-title><a href="#panel1">Log In</a></p>
+    <div class="content" data-section-content>
+      <h4> Log In</h4>    
+     <input type="text" placeholder="username">
+     <input type="password" placeholder="password">
+     <button class="small">Log In</button>
+                   
+                
+      
+    </div>
+  </section>
+  <section >
+    <p class="title" data-section-title><a href="#panel2">Register</a></p>
+    <div class="content" data-section-content>
+        <h4> Register Now</h4>
                     <input type="text" placeholder="username">
                     <input type="email" placeholder="Email Id">
                     <input type="password" placeholder="password">
                     <input type="password" placeholder="Re-Enter password">
                     <button class="small">Sign Up</button>
-                    <hr>
+     
+     
+    </div>
+  </section>
+</div>
+
+                   
                     <h6>Contact Us</h6>
                     <div class="small-4 large-4 columns">
-                        <form>
+                        
 
                             <p>Mobile-No: +9198578633</p>
                             <p><a href="mailto:rajagopalan@edcellence.in">rajagopalan@edcellence.in</a></p>
@@ -92,7 +118,7 @@ and open the template in the editor.
                             <a href="https://twitter.com/Ed_excellence">  <img src="http://placehold.it/30x30&text=t"></a>
                             <img src="http://placehold.it/30x30&text=f">
                             <img src="http://placehold.it/30x30&text=in">  
-                        </form>
+                        
                     </div>
                 </div>
 

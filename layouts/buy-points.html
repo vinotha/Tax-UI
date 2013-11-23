@@ -10,12 +10,15 @@ and open the template in the editor.
         <link rel ="stylesheet" href ="foundation.css">
         <link rel ="stylesheet" href ="layout.css">
         <script src="js/vendor/jquery.js"></script>
-        <script>
+         
+       <script>
+           
             $(document).ready(function() {
                 $("#submit-points").click(function() {
-                    $('#way-of-payment').toggle();
-                });
 
+                    $("#way-of-payment").show()
+
+               });
             });
         </script>
     </head>
@@ -26,7 +29,7 @@ and open the template in the editor.
                     <nav class="top-bar-section">
                         <img src ="http://placehold.it/250 x 45&text=sitename" />
                         <ul class="inline-list right ">
-                            <li> Hello vino</li>
+                            <li><a href="#"> Hello vino </a></li>
                             <li><a href="#">Contact Us</a></li>
                             <li><a href="home.html">Logout</a></li>
                         </ul>
@@ -49,7 +52,7 @@ and open the template in the editor.
 
         </header>
 
-    <body>
+    
         <div class="row">
             <div class="small-12 large-12 columns">
 
@@ -58,13 +61,13 @@ and open the template in the editor.
                 <form class="buy-points">
                     <table>
                         <tr>
-                            <td><lable> Enter your points</lable></td>
-                        <td><input type="text"></td>
-                        <td><lable> Rate</lable></std>
+                            <td>Enter your points</td>
+                        <td><input type="number"></td>
+                        <td>Rate</td>
                         <td><input type="text"></td>
                         </tr>
                         <tr>
-                            <td><button class="small" id="submit-points">Submit</td>
+                            <td><button class="small" id="submit-points">Submit</button></td>
                         </tr>
                     </table>
 
@@ -92,7 +95,7 @@ and open the template in the editor.
 
         </div>
 
-    </body>
+    
     <footer>
         <div class="row">
             <div class="small-12 large-12 columns">
@@ -100,4 +103,5 @@ and open the template in the editor.
             </div>
         </div>
     </footer>
+        </body>
 </html>
