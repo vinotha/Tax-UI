@@ -1,8 +1,10 @@
 #question {
+    
     text-decoration: underline;
 }
-a {
-    color:#66FFFF;
+
+a:link {
+    color:#5C7479;
 }
 
 
@@ -19,4 +21,18 @@ a:hover {
 }
 label {
     font-weight:bold;
+}
+.top-bar section ul li >a {
+    background: none repeat scroll 0 0 #222222;
+}
+.top-bar-section li a:not(.button) {
+     background: none repeat scroll 0 0 #222222;
+}
+footer {
+    top:50px;
+    position:relative;
+}
+header {
+    margin-bottom:50px;
+    position:relative;
 }

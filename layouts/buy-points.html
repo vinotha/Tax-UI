@@ -10,15 +10,15 @@ and open the template in the editor.
         <link rel ="stylesheet" href ="foundation.css">
         <link rel ="stylesheet" href ="layout.css">
         <script src="js/vendor/jquery.js"></script>
-         
-       <script>
-           
+
+        <script>
+
             $(document).ready(function() {
-                $("#submit-points").click(function() {
+                $("#buy").click(function() {
 
                     $("#way-of-payment").show()
 
-               });
+                });
             });
         </script>
     </head>
@@ -36,10 +36,17 @@ and open the template in the editor.
 
                     </nav>
                 </div>  
+                <div class="samll-12 large-12 columns">
+                    <hr>
+                    </div>
             </div>
 
-            <div class="row">
-                <div class="small-12 large-12 columns menu" >
+
+
+
+        </header>
+        <div class="row">
+                <div class="small-12 large-12 columns " >
                     <ul class="inline-list">
                         <li><a href="customer_page_after_login.html">Home</a>
 
@@ -48,39 +55,33 @@ and open the template in the editor.
                     </ul>
                 </div>
             </div>
-
-
-        </header>
-
-    
         <div class="row">
             <div class="small-12 large-12 columns">
-
-
-                <h5 style="text-align:center">Buy Points</h5>
-                <form class="buy-points">
-                    <table>
-                        <tr>
-                            <td>Enter your points</td>
-                        <td><input type="number"></td>
-                        <td>Rate</td>
-                        <td><input type="text"></td>
-                        </tr>
-                        <tr>
-                            <td><button class="small" id="submit-points">Submit</button></td>
-                        </tr>
-                    </table>
-
-                </form>
-
-
+                <h5>Buy Points</h5><br>
+            </div>
+            <div class="small-3 large-3 columns">
+                <label>Enter your Points  </label>
+            </div>
+            <div class="small-3 large-3 columns">
+                <input type="text" >
+            </div>
+            <div class="small-3 large-3 columns">
+                <label> Rate</label>
+            </div>
+            <div class="pull-2 small-2 large-2 columns">
+                <span>37</span>
+            </div>
+            <div class="small-12 large-12 columns">
+                <button id="buy">Buy</button>
             </div>
 
+        </div>
 
+        <div class="row">
             <div id="way-of-payment" style="display:none">
                 <div class="small-12 large-12 columns ">
 
-                    <p>Pay Your amount by</p>
+                    <h5>Choose payment way</h5><br>
                     <ul class="inline-list">
                         <li><p><input type="radio" name="cc">Credit Card</p></li> 
                         <li><p><input type="radio" name="cc">Debit Card</p></li>
@@ -90,18 +91,21 @@ and open the template in the editor.
                     <button class="small" >Submit</button>
                 </div>
             </div>
-
-            <hr> 
-
         </div>
 
-    
-    <footer>
-        <div class="row">
-            <div class="small-12 large-12 columns">
-                <p> © 2013 Pay Tax. All rights reserved.</p>
+
+
+
+
+        <footer>
+            <div class="row">
+                <div class="small-12 large-12 columns">
+                    <hr>
+                </div>
+                <div class="small-12 large-12 columns">
+                    <p> © 2013 Pay Tax. All rights reserved.</p>
+                </div>
             </div>
-        </div>
-    </footer>
-        </body>
+        </footer>
+    </body>
 </html>
