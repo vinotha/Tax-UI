@@ -5,10 +5,123 @@ and open the template in the editor.
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>SecureTax-People</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel ="stylesheet" href ="foundation.css">
+        <link rel ="stylesheet" href ="layout.css">
     </head>
+
+    <header>
+        <div class="row">
+            <div class="small-12 large-12 columns">
+                <nav class="top-bar-section">
+                    <img src ="http://placehold.it/250x45&text=sitename" />
+                    <ul class="inline-list right ">
+                        <li><a href="#">Hello vino</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="home.html">Logout</a></li>
+                    </ul>
+
+                </nav>
+            </div>  
+            <div class="small-12 large-12 columns">
+                <hr>
+            </div>
+        </div>
+
+    </header>
     <body>
-        <div>TODO write content</div>
+
+        <div class="row">
+            <div class="small-12 large-12 columns menu" >
+                <ul class="inline-list">
+                    <li><a href="admin.html">Home</a>
+                    <li><a href="category.html">Category</a>
+                    <li><a href="people.html">People</a>
+
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="small-6 large-6 columns">
+                <h6><a style="text-decoration:underline" href="#">Add New people</a></h6><br>
+                <h4>People</h4>
+
+            </div>
+
+
+            <div class="small-12 large-12 columns ">
+                <table>
+                    <thead>
+
+
+                        <tr> 
+                            <th>
+                                Name
+                            <th width="10">
+                                Role
+                            </th>
+                            <th width="150">
+                                Created Date
+                            </th>
+                            <th width="150">
+                                Last Access
+                            </th>
+                            <th>
+                                Created by
+                            </th>
+                            <th>Edit/Delete</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>vinotha</td>
+                        <td>admin</td>
+                        <td>27th Nov 2013</td>
+                        <td>None</td>
+                        <td></td>
+                        <td id="edit-delete"><a href="edit-people.html">edit</a>/<a href="#">delete</a></td>
+
+                    </tr>
+                    <tr>
+                        <td>sharmila</td>
+                        <td>consultant</td>
+                        <td>23th Nov 2013</td>
+                        <td>28th Nov 2013</td>
+                        <td>admin</td>
+                        <td id="edit-delete"><a href="edit-people.html">edit</a>/<a href="#">delete</a></td>
+                    </tr>
+                    <tr>
+                        <td>thaiyalnayaki</td>
+                        <td>consultant</td>
+                        <td>27th Nov 2013</td>
+                        <td>None</td>
+                        <td>admin</td>
+                        <td id="edit-delete"><a href="edit-people.html">edit</a>/<a href="#">delete</a></td>
+                    </tr>
+                    <tr>
+                        <td>vino</td>
+                        <td>customer</td>
+                        <td>27th Nov 2013</td>
+                        <td>None</td>
+                        <td>admin</td>
+                        <td id="edit-delete"><a href="edit-people.html">edit</a>/<a href="#">delete</a></td>
+                    </tr>
+                    <tbody>
+
+                </table>
+
+            </div>
+        </div>
+
     </body>
+    <footer>
+        <div class="row">
+            <div class="large-12 small-12 columns">
+                <hr>
+            </div>
+            <div class="small-12 large-12 columns">
+                <p> © 2013 Pay Tax. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </html>
