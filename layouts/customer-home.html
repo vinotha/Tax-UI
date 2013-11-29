@@ -4,8 +4,9 @@ and open the template in the editor.
 -->
 <!DOCTYPE html>
 <html>
+
     <head>
-        <title>Secure Tax Customer-home</title>
+        <title>Secure Tax Customer</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel ="stylesheet" href ="foundation.css">
@@ -15,6 +16,7 @@ and open the template in the editor.
         <script src="js/foundation/foundation.js"></script>
         <script src="js/foundation/foundation.section.js"></script>
         <script src="js/vendor/customer.js"></script>
+        <script type="text/javascript" src="tinymce/js/tinymce/tinymce.min.js"></script>
         <script>
             document.write('<script src=/js/vendor/'
                     + ('__proto__' in {} ? 'zepto' : 'jquery')
@@ -25,8 +27,6 @@ and open the template in the editor.
         <script>
             $(document).foundation();
         </script>
-        <script src="js/vendor/jquery.js"></script>
-
         <script>
 
             $(document).ready(function() {
@@ -37,14 +37,35 @@ and open the template in the editor.
                 });
             });
         </script>
-        <script type="text/javascript" src="tinymce/js/tinymce/tinymce.min.js"></script>
         <script>
             tinymce.init({
                 selector: "textarea",
                 menubar: false,
                 statusbar: false
             });
+            
         </script>
+        <script>
+            $(document).ready(function() {
+               
+              $("#cat1").click(function() {
+                    $("#points").text("10");
+                });
+                $("#cat2").click(function() {
+                    $("#points").text("20");
+                });
+                $("#cat3").click(function() {
+                    $("#points").text("30");
+                });
+                $("#cat4").click(function() {
+                    $("#points").text("40");
+                });
+                $("#cat5    ").click(function() {
+                    $("#points").text("50");
+                });
+                
+            });
+            </script>
     </head>
     <body>
         <header>
@@ -60,25 +81,26 @@ and open the template in the editor.
                     </nav>
                 </div> 
             </div>
-
             <div class="row">
                 <div class="small-12 large-12 columns">
                     <hr>
                 </div>
             </div>
         </header>
-
         <div class="row">
-            <div class="large-12 small-12 columns">
+            <div class="small-12 large-12 columns">
                 <div class="section-container tabs" data-section="tabs">
                     <section class="active">
                         <p class="title" data-section-title><a href="#">Home</a></p>
-                        <div class="content" data-section-content>                           
+                        <div class="content" data-section-content>
+
                             <div class="row">
                                 <div class="small-12 large-12 columns">
+                                    <h5>Question</h5>
                                     <table>
                                         <thead>
                                             <tr>
+
                                                 <th>
                                                     Question
                                                 </th>
@@ -89,22 +111,24 @@ and open the template in the editor.
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td><a href="#" id="question">This is longer content Donec id elit non mi porta gravida at eget metus.</a></td>
+                                                <td><a href="#" id="question">Does rolling a 401(k) into a roth IRA disqualify an individual from the earned income credit if their actual earnings are within the income window?<p style="display:inline;color:red">New</p></a></td>
                                                 <td>12th Nov 2013</td>
                                             </tr>
                                             <tr>
-                                                <td><a href="#" id="question">This is longer content Donec id elit non mi porta gravida at eget metus</a></td>
+                                                <td><a href="#" id="question">What items fall under the category of 'securities'?<p style="display:inline;color:red">New</p></a></td>
                                                 <td>12th Nov 2013</td>
                                             </tr>
                                             <tr>
-                                                <td><a href="#" id="question">This is longer content Donec id elit non mi porta gravida at eget metus.</a></td>
+                                                <td><a href="#" id="question">Does the NRI have to pay property tax if they buy property in India? Can a person fill a NRI in a Income tax form if he has been out of India for six months though he is Indian citizen? </a></td>
                                                 <td>12th Nov 2013</td>
                                             </tr>
                                             <tr>
-                                                <td><a href="#" id  ="question">This is longer content Donec id elit non mi porta gravida at eget metus.</a></td>
+                                                <td><a href="#" id  ="question">WHAT IS STANDARD DEDUCTION?</a></td>
                                                 <td>12th Nov 2013</td>
                                             </tr>
+
                                         <tbody>
+
                                     </table>
                                 </div>
                             </div>
@@ -113,71 +137,93 @@ and open the template in the editor.
                     <section>
                         <p class="title" data-section-title><a href="#">Create Question</a></p>
                         <div class="content" data-section-content>
+<div class="row">
+    <div class="small-12 large-12 columns">
+       <h5>Create Question</h5>
+        </div>
+    </div>
                             <div class="row">
                                 <div class="small-12 large-12 columns">
-                                    <h5>Create Question</h5><br>
-                                    <textarea></textarea>
+                                   
+
+                                    <label>Question</label><br>
+                                    <textarea style="height:120px;width:400px" placeholder="Enter your question here"></textarea><br/>
+
                                 </div>
-                                    </div>
-                            <div class="row">                                
-                                <div class="small-5 large-5 columns" style="margin-top:20px;position:relative">
+                            </div>
+                            <div class="row">
+                                <div class="small-6 large-6 columns">
                                     <label for="category"> Category</label><br>
-                                    <select>
-                                        <option>Category 1</option>
-                                        <option>Category 2</option>
-                                        <option>Category 3</option>
-                                        <option>Category 4</option>
-                                        <option>Category 5</option>
+
+                                    <select> 
+                                        <option id="sel" selected >choose your category</option>
+                                        <option id="cat1">Category 1</option>
+                                        <option id="cat2">Category 2</option>
+                                        <option id="cat3">Category 3</option>
+                                        <option id="cat4">Category 4</option>
+                                        <option id="cat5">Category 5</option>
                                     </select>
                                 </div>
-                                <div class="small-5 large-5 columns" style="margin-top:20px;position:relative">
+                                <div class="small-3 large-3 columns">
                                     <label> Points</label><br>
-                                    <div class="small-2 large-2 columns">
-                                        <span>10</span>
-                                    </div>
-                                    <div class="pull-1 small-4 large-4 columns">
-                                        <div style="margin-top:-15px;position:relative">
-                                            <a href="buy-points.html">   <button class="medium">Buy Points</button></a>
-                                        </div>
-                                    </div>
+                                    <span id="points"></span>
                                 </div>
-                                <div class="small-6 large-6 columns" >
+                                <div class="small-3 large-3 columns">
+                                    <a href="buy-points.html">   <button class="medium">Buy Points</button></a>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="small-12 large-12 columns">
+
                                     <label for="file-upload" >Select & upload file</label><br>
+
                                     <input type="file" multiple> 
                                     <button class="small">Upload</button>
                                 </div>
-                                <div class="small-12 large-12 columns" style="margin-top:30px;position:relative" >
-                                    <button class="medium">Ask</button>
+
+                            </div>
+                            <div class="row">
+                                <div class="small-12 large-12 columns">
+                                    <button class="small">Ask</button>
                                 </div>
                             </div>
+
                         </div>
                     </section>
                     <section>
                         <p class="title" data-section-title><a href="#">Buy Points</a></p>
-                        <div class="content" data-section-content>                            
+                        <div class="content" data-section-content>
+
                             <div class="row">
                                 <div class="small-12 large-12 columns">
-                                    <h5>Buy Points</h5><br>
+                                    <h5>Buy Points</h5><br>  
                                 </div>
+                            </div>
+                            <div class="row">
                                 <div class="small-3 large-3 columns">
                                     <label>Enter your Points  </label>
                                 </div>
-                                <div class="small-2 large-2 columns">
+                                <div class="small-3 large-3 columns">
                                     <input type="text" >
                                 </div>
-                                <div class="small-2 large-2 columns">
+                                <div class="small-3 large-3 columns">
                                     <label> Rate</label>
                                 </div>
                                 <div class="small-3 large-3 columns">
                                     <span>37 Rupees</span>
                                 </div>
-                            </div>
-                            <div class="small-2 large-2 columns">
-                                <button id="buy">Buy</button>
+
                             </div>
                             <div class="row">
-                                <div id="way-of-payment" style="display:none">
-                                    <div class="small-12 large-12 columns ">
+                                <div class="small-12 large-12 columns">
+                                    <button id="buy">Buy</button>
+                                </div>
+                            </div>
+                            
+                                <div id="way-of-payment" style="display:none" >
+                                    <div class="row">
+                                    <div class="small-12 large-12 columns">
                                         <h5>Choose payment way</h5><br>
                                         <ul class="inline-list">
                                             <li><p><input type="radio" name="cc">Credit Card</p></li> 
@@ -185,8 +231,12 @@ and open the template in the editor.
                                             <li><p><input type="radio" name="cc">Net Banking</p></li>
                                             <li><p><input type="radio" name="cc">Mobile balance</p></li>
                                         </ul>
-                                        <button class="small" >Submit</button>
                                     </div>
+                                        
+                                    <div class="small-12 large-12 columns">
+                                        <button class="small">Submit</button>
+                                    </div>
+                                            
                                 </div>
                             </div>
                         </div>
@@ -194,15 +244,9 @@ and open the template in the editor.
                 </div>
             </div>
         </div>
-    </body>
-     <footer>
-            <div class="row">
-                <div class="large-12 small-12 columns">
-                    <hr>
-                </div>
-                <div class="small-12 large-12 columns">
-                    <p> © 2013 Pay Tax. All rights reserved.</p>
-                </div>
-            </div>
-        </footer>
+        
+</body>
+
+    
+   
 </html>

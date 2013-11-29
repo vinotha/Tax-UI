@@ -4,17 +4,20 @@
 }
 
 a:link {
-    color:#5C7479;
+    color:#944D94;
 }
 
 
 a:visited {
-    color:#944D94;
+    color:#5C7479;
 
 }
 a:hover {
 
     color:#E671AC;
+}
+a:active {
+    color:#993300;
 }
 .buy-points table {
     border:none;
@@ -28,13 +31,12 @@ label {
 .top-bar-section li a:not(.button) {
     background: none repeat scroll 0 0 #222222;
 }
-footer {
-    top:50px;
-    position:relative;
+#footer {
+    
 }
-header {
-    margin-bottom:50px;
-    position:relative;
+#header {
+    
+    
 }
 #edit-delete a {
     text-decoration: underline;
