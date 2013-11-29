@@ -14,6 +14,27 @@ and open the template in the editor.
         <!-- If you are using the gem version, you need this only -->
         <link rel="stylesheet" href="css/app.css" />
         <link rel ="stylesheet" href ="css/layout.css">
+        <script src="js/vendor/custom.modernizr.js"></script>
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/foundation/foundation.js"></script>
+        <script src="js/foundation/foundation.section.js"></script>
+        <script src="js/vendor/customer.js"></script>
+        <script src="js/foundation/foundation.reveal.js"></script>
+        <script>
+            document.write('<script src=/js/vendor/'
+                    + ('__proto__' in {} ? 'zepto' : 'jquery')
+                    + '.js><\/script>');
+        </script>
+
+
+        <script>
+            $(document).foundation();
+        </script>
+        <script>
+            $('#myModal').foundation('reveal', 'open');
+            $('#myModal').foundation('reveal', 'close');
+
+        </script>
     </head>
 
     <header>
@@ -51,7 +72,7 @@ and open the template in the editor.
             <div class="small-6 large-6 columns">
                 <h4>People</h4>
                 <h6><a style="text-decoration:underline" href="add-new-people.html">Add New people</a></h6><br>
-                
+
 
             </div>
 
@@ -85,7 +106,7 @@ and open the template in the editor.
                         <td>27th Nov 2013</td>
                         <td>None</td>
                         <td></td>
-                        <td id="edit-delete"><a href="edit-people.html">edit</a>/<a href="#">delete</a></td>
+                        <td id="edit-delete"><a href="edit-people.html">edit</a>/<a href="#" data-reveal-id="myModal">delete</a></td>
 
                     </tr>
                     <tr>
@@ -94,7 +115,7 @@ and open the template in the editor.
                         <td>23th Nov 2013</td>
                         <td>28th Nov 2013</td>
                         <td>admin</td>
-                        <td id="edit-delete"><a href="edit-people.html">edit</a>/<a href="#">delete</a></td>
+                        <td id="edit-delete"><a href="edit-people.html">edit</a>/<a href="#" data-reveal-id="myModal">delete</a></td>
                     </tr>
                     <tr>
                         <td>thaiyalnayaki</td>
@@ -102,7 +123,7 @@ and open the template in the editor.
                         <td>27th Nov 2013</td>
                         <td>None</td>
                         <td>admin</td>
-                        <td id="edit-delete"><a href="edit-people.html">edit</a>/<a href="#">delete</a></td>
+                        <td id="edit-delete"><a href="edit-people.html">edit</a>/<a href="#" data-reveal-id="myModal">delete</a></td>
                     </tr>
                     <tr>
                         <td>vino</td>
@@ -110,11 +131,17 @@ and open the template in the editor.
                         <td>27th Nov 2013</td>
                         <td>None</td>
                         <td>admin</td>
-                        <td id="edit-delete"><a href="edit-people.html">edit</a>/<a href="#">delete</a></td>
+                        <td id="edit-delete"><a href="edit-people.html">edit</a>/<a href="#" data-reveal-id="myModal">delete</a></td>
                     </tr>
                     <tbody>
 
                 </table>
+                <div id="myModal" class="reveal-modal">
+                    <p>Are you sure to delete this people?</p>
+
+                    <a href="people.html"> <button>yes</button></a>
+                    <a class="close-reveal-modal">&#215;</a>
+                </div>
 
             </div>
         </div>

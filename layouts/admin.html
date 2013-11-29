@@ -14,6 +14,27 @@ and open the template in the editor.
         <!-- If you are using the gem version, you need this only -->
         <link rel="stylesheet" href="css/app.css" />
         <link rel ="stylesheet" href ="css/layout.css">
+        
+        <script src="js/vendor/custom.modernizr.js"></script>
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/foundation/foundation.js"></script>
+        <script src="js/foundation/foundation.section.js"></script>
+        <script src="js/vendor/customer.js"></script>
+        <script src="js/foundation/foundation.reveal.js"></script>
+        <script>
+            document.write('<script src=/js/vendor/'
+                    + ('__proto__' in {} ? 'zepto' : 'jquery')
+                    + '.js><\/script>');
+        </script>
+
+
+        <script>
+            $(document).foundation();
+        </script>
+       
+
+        
+
     </head>
     <body>
         <header>
@@ -41,7 +62,7 @@ and open the template in the editor.
                 <ul class="inline-list">
                     <li><a href="#">Home</a>
                     <li><a href="category.html">Manage Categories</a>
-                    <li><a href="">Manage People</a>
+                    <li><a href="people.html">Manage People</a>
 
                 </ul>
             </div>
