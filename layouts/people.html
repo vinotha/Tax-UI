@@ -7,8 +7,13 @@ and open the template in the editor.
     <head>
         <title>SecureTax-People</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel ="stylesheet" href ="foundation.css">
-        <link rel ="stylesheet" href ="layout.css">
+        <meta name="viewport" content="width=device-width" />
+        <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/foundation.css" />
+        <!-- If you are using the gem version, you need this only -->
+        <link rel="stylesheet" href="css/app.css" />
+        <link rel ="stylesheet" href ="css/layout.css">
     </head>
 
     <header>
@@ -36,16 +41,17 @@ and open the template in the editor.
             <div class="small-12 large-12 columns menu" >
                 <ul class="inline-list">
                     <li><a href="admin.html">Home</a>
-                    <li><a href="category.html">Category</a>
-                    <li><a href="people.html">People</a>
+                    <li><a href="category.html">Manage Categories</a>
+                    <li><a href="people.html">Manage People</a>
 
                 </ul>
             </div>
         </div>
         <div class="row">
             <div class="small-6 large-6 columns">
-                <h6><a style="text-decoration:underline" href="#">Add New people</a></h6><br>
                 <h4>People</h4>
+                <h6><a style="text-decoration:underline" href="add-new-people.html">Add New people</a></h6><br>
+                
 
             </div>
 

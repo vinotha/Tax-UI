@@ -6,9 +6,14 @@ and open the template in the editor.
 <html>
     <head>
         <title>SecureTax-admin</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel ="stylesheet" href ="foundation.css">
-        <link rel ="stylesheet" href ="layout.css">
+       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/foundation.css" />
+        <!-- If you are using the gem version, you need this only -->
+        <link rel="stylesheet" href="css/app.css" />
+        <link rel ="stylesheet" href ="css/layout.css">
     </head>
     <body>
         <header>
@@ -35,8 +40,8 @@ and open the template in the editor.
             <div class="small-12 large-12 columns menu" >
                 <ul class="inline-list">
                     <li><a href="#">Home</a>
-                    <li><a href="category.html">Category</a>
-                    <li><a href="">People</a>
+                    <li><a href="category.html">Manage Categories</a>
+                    <li><a href="">Manage People</a>
 
                 </ul>
             </div>
@@ -47,39 +52,39 @@ and open the template in the editor.
                     <thead>
                         <tr>
                             <th >Questions</th>
-                            <th>Type</th>
-                            <th width="120">Created Date</th>
-                            <th width="150">Created By</th>
+                            
+                            <th width="120">Asked on</th>
+                            <th width="150">Asked By</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                             <td><a href="answer-page.html" id="question">Does rolling a 401(k) into a roth IRA disqualify an individual from the earned income credit if their actual earnings are within the income window?<p style="display:inline;color:red">New</p></a></td>
-                            <td>Question</td>
+                             <td><a href="answer.html" id="question">Does rolling a 401(k) into a roth IRA disqualify an individual from the earned income credit if their actual earnings are within the income window?</a><p class="tiny button radius disabled " style="display:inline;position:relative;left:2px;top:2px;bottom:2px;background-color: red ">New</p></td>
+                           
                             <td>12th Nov 2013</td>
                             <td>vino</td>
                         </tr>
                         <tr>
-                            <td><a id="question" href="#">This is longer content Donec id elit non mi porta gravida at eget metus.<p style="color:red;display:inline">New</p></a></td>
-                            <td>Answer</td>
+                           <td><a href="#" id  ="question">What is standard deduction?</a></td>
+                            
                             <td>12th Nov 2013</td>
                             <td>vino</td>
                         </tr>
                         <tr>
-                            <td><a id="question" href="#">This is longer content Donec id elit non mi porta gravida at eget metus.<p style="color:red;display:inline">New</p></a></td>
-                            <td>Question</td>
+                                               <td><a href="#" id="question">Does the NRI have to pay property tax if they buy property in India? Can a person fill a NRI in a Income tax form if he has been out of India for six months though he is Indian citizen?</a></td>
+                            
                             <td>12th Nov 2013</td>
                             <td>vino</td>
                         </tr>
                         <tr>
-                            <td><a id="question" href="#">This is longer content Donec id elit non mi porta gravida at eget metus.<p style="color:red;display:inline"></p></a></td>
-                            <td>Question</td>
+                             <td><a href="#" id="question">Does the NRI have to pay property tax if they buy property in India? Can a person fill a NRI in a Income tax form if he has been out of India for six months though he is Indian citizen?</a></td>
+                           
                             <td>12th Nov 2013</td>
                             <td>vino</td>
                         </tr>
                         <tr>
-                            <td><a id="question" href="#">This is longer content Donec id elit non mi porta gravida at eget metus.<p style="color:red;display:inline">New</p></a></td>
-                            <td>Answer</td>
+                            <td><a id="question" href="#">This is longer content Donec id elit non mi porta gravida at eget metus.</a></td>
+                           
                             <td>12th Nov 2013</td>
                             <td>vino</td>
                         </tr>

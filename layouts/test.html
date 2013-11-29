@@ -6,15 +6,21 @@ and open the template in the editor.
 <html>
     <head>
         <title>Secure Tax Customer-home</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel ="stylesheet" href ="foundation.css">
-        <link rel ="stylesheet" href ="layout.css">
+
+        <meta name="viewport" content="width=device-width" />
+        <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/foundation.css" />
+        <!-- If you are using the gem version, you need this only -->
+        <link rel="stylesheet" href="css/app.css" />
+        <link rel ="stylesheet" href ="css/layout.css">
+
         <script src="js/vendor/custom.modernizr.js"></script>
         <script src="js/vendor/jquery.js"></script>
         <script src="js/foundation/foundation.js"></script>
         <script src="js/foundation/foundation.section.js"></script>
         <script src="js/vendor/customer.js"></script>
+        <script src="js/foundation/foundation.reveal.js"></script>
         <script>
             document.write('<script src=/js/vendor/'
                     + ('__proto__' in {} ? 'zepto' : 'jquery')
@@ -44,6 +50,9 @@ and open the template in the editor.
                 menubar: false,
                 statusbar: false
             });
+            $('#myModal').foundation('reveal', 'open');
+            $('#myModal').foundation('reveal', 'close');
+
         </script>
     </head>
     <body>
@@ -70,139 +79,29 @@ and open the template in the editor.
 
         <div class="row">
             <div class="large-12 small-12 columns">
-                <div class="section-container tabs" data-section="tabs">
-                    <section class="active">
-                        <p class="title" data-section-title><a href="#">Home</a></p>
-                        <div class="content" data-section-content>                           
-                            <div class="row">
-                                <div class="small-12 large-12 columns">
-                                    <table>
-                                        <thead>
-                                            <tr>
-                                                <th>
-                                                    Question
-                                                </th>
-                                                <th width="120">
-                                                    Created Date
-                                                </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><a href="#" id="question">This is longer content Donec id elit non mi porta gravida at eget metus.</a></td>
-                                                <td>12th Nov 2013</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="#" id="question">This is longer content Donec id elit non mi porta gravida at eget metus</a></td>
-                                                <td>12th Nov 2013</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="#" id="question">This is longer content Donec id elit non mi porta gravida at eget metus.</a></td>
-                                                <td>12th Nov 2013</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="#" id  ="question">This is longer content Donec id elit non mi porta gravida at eget metus.</a></td>
-                                                <td>12th Nov 2013</td>
-                                            </tr>
-                                        <tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section>
-                        <p class="title" data-section-title><a href="#">Create Question</a></p>
-                        <div class="content" data-section-content>
-                            <div class="row">
-                                <div class="small-12 large-12 columns">
-                                    <h5>Create Question</h5><br>
-                                    <textarea></textarea>
-                                </div>
-                                    </div>
-                            <div class="row">                                
-                                <div class="small-5 large-5 columns" style="margin-top:20px;position:relative">
-                                    <label for="category"> Category</label><br>
-                                    <select>
-                                        <option>Category 1</option>
-                                        <option>Category 2</option>
-                                        <option>Category 3</option>
-                                        <option>Category 4</option>
-                                        <option>Category 5</option>
-                                    </select>
-                                </div>
-                                <div class="small-5 large-5 columns" style="margin-top:20px;position:relative">
-                                    <label> Points</label><br>
-                                    <div class="small-2 large-2 columns">
-                                        <span>10</span>
-                                    </div>
-                                    <div class="pull-1 small-4 large-4 columns">
-                                        <div style="margin-top:-15px;position:relative">
-                                            <a href="buy-points.html">   <button class="medium">Buy Points</button></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="small-6 large-6 columns" >
-                                    <label for="file-upload" >Select & upload file</label><br>
-                                    <input type="file" multiple> 
-                                    <button class="small">Upload</button>
-                                </div>
-                                <div class="small-12 large-12 columns" style="margin-top:30px;position:relative" >
-                                    <button class="medium">Ask</button>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section>
-                        <p class="title" data-section-title><a href="#">Buy Points</a></p>
-                        <div class="content" data-section-content>                            
-                            <div class="row">
-                                <div class="small-12 large-12 columns">
-                                    <h5>Buy Points</h5><br>
-                                </div>
-                                <div class="small-3 large-3 columns">
-                                    <label>Enter your Points  </label>
-                                </div>
-                                <div class="small-2 large-2 columns">
-                                    <input type="text" >
-                                </div>
-                                <div class="small-2 large-2 columns">
-                                    <label> Rate</label>
-                                </div>
-                                <div class="small-3 large-3 columns">
-                                    <span>37 Rupees</span>
-                                </div>
-                            </div>
-                            <div class="small-2 large-2 columns">
-                                <button id="buy">Buy</button>
-                            </div>
-                            <div class="row">
-                                <div id="way-of-payment" style="display:none">
-                                    <div class="small-12 large-12 columns ">
-                                        <h5>Choose payment way</h5><br>
-                                        <ul class="inline-list">
-                                            <li><p><input type="radio" name="cc">Credit Card</p></li> 
-                                            <li><p><input type="radio" name="cc">Debit Card</p></li>
-                                            <li><p><input type="radio" name="cc">Net Banking</p></li>
-                                            <li><p><input type="radio" name="cc">Mobile balance</p></li>
-                                        </ul>
-                                        <button class="small" >Submit</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+
+                <div id="myModal" class="reveal-modal small">
+                    <h2>Awesome. I have it.</h2>
+                    <p class="lead">Your couch.  It is mine.</p>
+                    <p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
+                    <a class="close-reveal-modal">&#215;</a>
                 </div>
+                <div class="reveal-modal-bg" style="display: none">
+                    
+                </div>
+<a href="#" data-reveal-id="myModal">Click Me For A Modal</a>
+
             </div>
         </div>
     </body>
-     <footer>
-            <div class="row">
-                <div class="large-12 small-12 columns">
-                    <hr>
-                </div>
-                <div class="small-12 large-12 columns">
-                    <p> © 2013 Pay Tax. All rights reserved.</p>
-                </div>
+    <footer>
+        <div class="row">
+            <div class="large-12 small-12 columns">
+                <hr>
             </div>
-        </footer>
+            <div class="small-12 large-12 columns">
+                <p> © 2013 Pay Tax. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 </html>

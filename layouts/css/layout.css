@@ -1,0 +1,44 @@
+#question {
+
+    text-decoration: underline;
+    line-height: 28px;
+}
+
+a:link {
+    color:#944D94;
+}
+
+
+a:visited {
+    color:#5C7479;
+
+}
+a:hover {
+
+    color:#E671AC;
+}
+a:active {
+    color:#993300;
+}
+.buy-points table {
+    border:none;
+}
+label {
+    font-weight:bold;
+}
+.top-bar section ul li >a {
+    background: none repeat scroll 0 0 #222222;
+}
+.top-bar-section li a:not(.button) {
+    background: none repeat scroll 0 0 #222222;
+}
+#footer {
+    
+}
+#header {
+    
+    
+}
+#edit-delete a {
+    text-decoration: underline;
+}

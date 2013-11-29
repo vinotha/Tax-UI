@@ -6,10 +6,15 @@ and open the template in the editor.
 <html>
     <head>
         <title>SecureTax-Category</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel ="stylesheet" href ="foundation.css">
-        <link rel ="stylesheet" href ="layout.css">
-    </head>
+       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width" />
+        <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/foundation.css" />
+        <!-- If you are using the gem version, you need this only -->
+        <link rel="stylesheet" href="css/app.css" />
+        <link rel ="stylesheet" href ="css/layout.css">
+    </head> 
 
     <header>
         <div class="row">
@@ -36,8 +41,8 @@ and open the template in the editor.
             <div class="small-12 large-12 columns menu" >
                 <ul class="inline-list">
                     <li><a href="admin.html">Home</a>
-                    <li><a href="category.html">Category</a>
-                    <li><a href="people.html">People</a>
+                    <li><a href="category.html">Manage Categories</a>
+                    <li><a href="people.html">Manage People</a>
 
                 </ul>
             </div>
@@ -86,7 +91,7 @@ and open the template in the editor.
                         <td>12</td>
                         <td>23th Nov 2013</td>
                         <td>28th Nov 2013</td>
-                        <td>ad7in</td>
+                        <td>admin</td>
                         <td id="edit-delete"><a href="#">edit</a>/<a href="#">delete</a></td>
                     </tr>
                     <tr>
@@ -123,7 +128,7 @@ and open the template in the editor.
                 <input style="width:200px" type="text" placeholder="Type your category name"><br>
                 <label>Points</label><br>
                 <input style="width:200px" type="text" placeholder="Type your points"><br>
-                <a href="add-new-category.html">   <button class="small">Add</button></a>
+                <a href="add-category-with-message.html">   <button class="small">Add</button></a>
             </div>
         </div>
 
