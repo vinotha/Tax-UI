@@ -5,7 +5,8 @@ and open the template in the editor.
 <!DOCTYPE html>
 <html>
     <head>
-        <title>SecureTax-Router</title>
+        <title>Secure Tax Customer-home</title>
+
         <meta name="viewport" content="width=device-width" />
         <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
         <link rel="stylesheet" href="css/normalize.css" />
@@ -13,6 +14,72 @@ and open the template in the editor.
         <!-- If you are using the gem version, you need this only -->
         <link rel="stylesheet" href="css/app.css" />
         <link rel ="stylesheet" href ="css/layout.css">
+
+        <script src="js/vendor/custom.modernizr.js"></script>
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/foundation/foundation.js"></script>
+        <script src="js/foundation/foundation.section.js"></script>
+        <script src="js/vendor/customer.js"></script>
+        <script src="js/foundation/foundation.reveal.js"></script>
+        <script type="text/javascript" src="tinymce/js/tinymce/tinymce.min.js"></script>
+        <script>
+            document.write('<script src=/js/vendor/'
+                    + ('__proto__' in {} ? 'zepto' : 'jquery')
+                    + '.js><\/script>');
+        </script>
+
+
+        <script>
+            $(document).foundation();
+        </script>
+        <script>
+            $(document).foundation('section', {deep_linking: true}, function(response) {
+                console.log(response.errors);
+            });
+        </script>
+        <script>
+
+            $(document).ready(function() {
+                $("#buy").click(function() {
+
+                    $("#way-of-payment").show()
+
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+                $("#sel").click(function() {
+                    $("#points").text("0");
+                });
+
+                $("#cat1").click(function() {
+                    $("#points").text("10");
+                });
+                $("#cat2").click(function() {
+                    $("#points").text("20");
+                });
+                $("#cat3").click(function() {
+                    $("#points").text("30");
+                });
+                $("#cat4").click(function() {
+                    $("#points").text("40");
+                });
+                $("#cat5    ").click(function() {
+                    $("#points").text("50");
+                });
+
+            });
+        </script>
+        <script>
+            tinymce.init({
+                selector: "textarea",
+                menubar: false,
+                statusbar: false
+            });
+        </script>
+
+        <script src="js/vendor/jquery.js"></script>
     </head>
     <body>
         <header>
@@ -36,7 +103,16 @@ and open the template in the editor.
 
 
         </header>
-        <div class="row">
+
+
+        <div class="row"> <!-- start row div -->
+            <div class="small-12 large-12 columns">  <!-- start div with 12 columns -->
+                <div class="section-container auto" data-section>
+
+                    <section class="active">
+                        <p class="title" data-section-title><a href="#panel1">home</a></p>
+                        <div class="content" data-section-content>
+                             <div class="row">
 
 
             <div class="large-12 small-12 columns">
@@ -95,16 +171,24 @@ and open the template in the editor.
                 </table>
             </div>
         </div>
+
+                        </div>
+                    </section>
+                    
+                </div> 
+            </div><!-- start 12 columns div end-->
+        </div><!-- start row end -->
+
         <footer>
             <div class="row">
                 <div class="small-12 large-12 columns">
-                    <hr>    
-                </div>
+                    <hr>
+                </div>  
                 <div class="small-12 large-12 columns">
                     <p> © 2013 Pay Tax. All rights reserved.</p>
                 </div>
             </div>
         </footer>
-
     </body>
+
 </html>

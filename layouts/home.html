@@ -5,7 +5,8 @@ and open the template in the editor.
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Secure Tax Home</title>
+        <title>Secure Tax Customer-home</title>
+
         <meta name="viewport" content="width=device-width" />
         <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
         <link rel="stylesheet" href="css/normalize.css" />
@@ -19,6 +20,8 @@ and open the template in the editor.
         <script src="js/foundation/foundation.js"></script>
         <script src="js/foundation/foundation.section.js"></script>
         <script src="js/vendor/customer.js"></script>
+        <script src="js/foundation/foundation.reveal.js"></script>
+        <script type="text/javascript" src="tinymce/js/tinymce/tinymce.min.js"></script>
         <script>
             document.write('<script src=/js/vendor/'
                     + ('__proto__' in {} ? 'zepto' : 'jquery')
@@ -29,98 +32,189 @@ and open the template in the editor.
         <script>
             $(document).foundation();
         </script>
+        <script>
+            $(document).foundation('section', {deep_linking: true}, function(response) {
+                console.log(response.errors);
+            });
+        </script>
+        <script>
 
+            $(document).ready(function() {
+                $("#buy").click(function() {
+
+                    $("#way-of-payment").show()
+
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+                $("#sel").click(function() {
+                    $("#points").text("0");
+                });
+
+                $("#cat1").click(function() {
+                    $("#points").text("10");
+                });
+                $("#cat2").click(function() {
+                    $("#points").text("20");
+                });
+                $("#cat3").click(function() {
+                    $("#points").text("30");
+                });
+                $("#cat4").click(function() {
+                    $("#points").text("40");
+                });
+                $("#cat5    ").click(function() {
+                    $("#points").text("50");
+                });
+
+            });
+        </script>
+        <script>
+            tinymce.init({
+                selector: "textarea",
+                menubar: false,
+                statusbar: false
+            });
+        </script>
+
+        <script src="js/vendor/jquery.js"></script>
     </head>
     <body>
         <header>
             <div class="row">
-                <div class="small-5 large-5 columns">
-                    <img src ="http://placehold.it/250x45&text=THE AUDITOR">
-                </div>
+                <div class="small-12 large-12 columns">
+                    <nav class="top-bar-section">
+                        <img src ="http://placehold.it/250x45&text=sitename"/>
+
+                    </nav>
+                </div> 
                 <div class="small-12 large-12 columns">
                     <hr>
                 </div>
             </div>
-        </header> 
+        </header>
 
-        <div class="row">
-            <div class="small-12 large-12 columns" >
-                <ul class="inline-list">
-                    <li><a href="#">Services</a>
-                    <li><a href="#">About</a>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class='small-6 large-6 columns ' style="border-right: 1px solid grey">
-                <h3>Features</h3>
 
-                <h5><a href='#'>First Feature</a></h5>
-                <p>Pay tax is a project built on the idea to make the ever increasing tax filing headache a thing of the past.You should find this website very easy and intuitive to use.See the Process Flow</p>
+        <div class="row"> <!-- start row div -->
+            <div class="small-12 large-12 columns">  <!-- start div with 12 columns -->
+                <div class="section-container auto" data-section>
 
-                <h5><a href="#">Second Feature</a></h5>
-                <p>Pay tax is a project built on the idea to make the ever increasing tax filing headache a thing of the past.You should find this website very easy and intuitive to use.See the Process Flow</p>
+                    <section class="active">
+                        <p class="title" data-section-title><a href="#panel1">home</a></p>
+                        <div class="content" data-section-content>
+                            <div class="row">
+                                <div class='small-6 large-6 columns ' style="border-right: 1px solid grey">
+                                    <h3>Features</h3>
 
-                <h5><a href="#">Third Feature</a></h5>
-                <p>Pay tax is a project built on the idea to make the ever increasing tax filing headache a thing of the past.You should find this website very easy and intuitive to use.See the Process Flow</p>
+                                    <h5 id="first"><a href='#'>First Feature</a></h5>
+                                    <p>Pay tax is a project built on the idea to make the ever increasing tax filing headache a thing of the past.You should find this website very easy and intuitive to use.See the Process Flow</p>
 
-                <h5><a href="#">Four Feature</a></h5>
-                <p>Pay tax is a project built on the idea to make the ever increasing tax filing headache a thing of the past.You should find this website very easy and intuitive to use.See the Process Flow</p>
-                <p>   <a href="#">See More Features</a></p>
-            </div>
+                                    <h5><a href="#">Second Feature</a></h5>
+                                    <p>Pay tax is a project built on the idea to make the ever increasing tax filing headache a thing of the past.You should find this website very easy and intuitive to use.See the Process Flow</p>
 
-            <div class="small-6 large-6 columns" >
-                <div style="height:365px;position:relative;">                 
-                    <div class="section-container tabs" data-section>
-                        <section class="active">
-                            <p class="title" data-section-title><a href="#panel1">Log In</a></p>
-                            <div class="content" data-section-content>
-                                <h4> Log In</h4>    
-                                <input type="text" placeholder="username">
-                                <input type="password" placeholder="password">
-                                <a href="customer.html">   <button class="small">Log In</button></a>
+                                    <h5><a href="#">Third Feature</a></h5>
+                                    <p>Pay tax is a project built on the idea to make the ever increasing tax filing headache a thing of the past.You should find this website very easy and intuitive to use.See the Process Flow</p>
+
+                                    <h5><a href="#">Four Feature</a></h5>
+                                    <p>Pay tax is a project built on the idea to make the ever increasing tax filing headache a thing of the past.You should find this website very easy and intuitive to use.See the Process Flow</p>
+                                    <p>   <a href="#">See More Features</a></p>
+                                </div>
+
+                                <div class="small-6 large-6 columns" >
+                                    <div style="height:365px;position:relative;">                 
+                                        <div class="section-container auto" data-section>
+                                            <section class="active">
+                                                <p class="title" data-section-title><a href="#panel1">Log In</a></p>
+                                                <div class="content" data-section-content>
+                                                    <h4> Log In</h4>    
+                                                    <input type="text" placeholder="username">
+                                                    <input type="password" placeholder="password">
+                                                    <a href="customer.html">   <button class="small">Log In</button></a>
+                                                </div>
+                                            </section>
+
+                                            <section >
+                                                <p class="title" data-section-title><a href="#panel2">Register</a></p>
+                                                <div class="content" data-section-content>
+                                                    <h4> Register Now</h4>
+                                                    <input type="text" placeholder="username" patteren="">
+                                                    <input type="email" placeholder="Email Id">
+                                                    <input type="password" placeholder="password">
+                                                    <input type="password" placeholder="Re-Enter password">
+                                                    <a href="#">  <button class="small">Sign Up</button></a>
+                                                </div>
+                                            </section>
+                                        </div>                  
+                                    </div>
+
+                                    <div class="small-4 large-4 columns">
+                                        <h6>Contact Us</h6>
+                                        <p>Mobile-No: +9198578633</p>
+                                        <p><a href="mailto:rajagopalan@edcellence.in">rajagopalan@edcellence.in</a></p>
+                                        <p><a href="mailto:rajagopalan@edcellence.in">lakshminp.edcellence.in</a></p>
+                                        <hr>
+                                        Follow Us<br>
+                                        <a href="https://twitter.com/Ed_excellence">  
+                                            <img src="http://placehold.it/30x30&text=t"></a>
+                                        <a href="#"> <img src="http://placehold.it/30x30&text=f"></a>
+                                        <a href="#"> <img src="http://placehold.it/30x30&text=in">  </a>
+
+                                    </div>
+                                </div>
+                            </div>  
+
+                        </div>
+                    </section>
+                    <section>
+                        <p class="title" data-section-title><a href="#panel2">Services</a></p>
+                        <div class="content" data-section-content>
+
+
+                        </div>
+                    </section>
+                    <section>
+                        <p class="title" data-section-title><a href="#panel3">About</a></p>
+                        <div class="content" data-section-content>
+                            <div class="row">
+                                <div class="small-12 large-12 columns">
+                                    <div class="small-3 large-3 columns">
+                                        <img src="http://placehold.it/134x134&text=img">
+                                    </div>
+                                    <div class=" pull-1 small-8 large-8 columns">
+                                        <p>As a web developer, third party API integration is something you will have to face. Especially with the current trend, we have facebook, twitter, flickr etc. Today, we are going to look at dribbble's API. Dribbble is a place to show off your design, it's based on invitation basis, therefore, most designs are of high quality.</p>
+                                    </div>
+                                </div>
+                                <div class="small-12 large-12 columns">
+                                    <div class="small-8 large-8 columns">
+                                        <p>As a web developer, third party API integration is something you will have to face. Especially with the current trend, we have facebook, twitter, flickr etc. Today, we are going to look at dribbble's API. Dribbble is a place to show off your design, it's based on invitation basis, therefore, most designs are of high quality.</p>
+                                    </div>
+                                    <div class="push-1 small-3 large-3 columns">
+                                        <img src="http://placehold.it/134x134&text=img">
+                                    </div>
+                                </div>
+
+                                <div class="small-12 large-12 columns">
+                                </div>
                             </div>
-                        </section>
 
-                        <section >
-                            <p class="title" data-section-title><a href="#panel2">Register</a></p>
-                            <div class="content" data-section-content>
-                                <h4> Register Now</h4>
-                                <input type="text" placeholder="username" patteren="">
-                                <input type="email" placeholder="Email Id">
-                                <input type="password" placeholder="password">
-                                <input type="password" placeholder="Re-Enter password">
-                                <a href="#">  <button class="small">Sign Up</button></a>
-                            </div>
-                        </section>
-                    </div>                  
-                </div>
-
-                <div class="small-4 large-4 columns">
-                    <h6>Contact Us</h6>
-                    <p>Mobile-No: +9198578633</p>
-                    <p><a href="mailto:rajagopalan@edcellence.in">rajagopalan@edcellence.in</a></p>
-                    <p><a href="mailto:rajagopalan@edcellence.in">lakshminp.edcellence.in</a></p>
-                    <hr>
-                    Follow Us<br>
-                    <a href="https://twitter.com/Ed_excellence">  
-                        <img src="http://placehold.it/30x30&text=t"></a>
-                    <a href="#"> <img src="http://placehold.it/30x30&text=f"></a>
-                    <a href="#"> <img src="http://placehold.it/30x30&text=in">  </a>
-
-                </div>
-            </div>
-        </div>  
+                        </div>
+                    </section>
+                </div> 
+            </div><!-- start 12 columns div end-->
+        </div><!-- start row end -->
 
         <footer>
             <div class="row">
                 <div class="small-12 large-12 columns">
                     <hr>
-                </div>
+                </div>  
                 <div class="small-12 large-12 columns">
                     <p> © 2013 Pay Tax. All rights reserved.</p>
                 </div>
             </div>
         </footer>
     </body>
+
 </html>

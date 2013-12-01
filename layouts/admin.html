@@ -5,8 +5,8 @@ and open the template in the editor.
 <!DOCTYPE html>
 <html>
     <head>
-        <title>SecureTax-admin</title>
-       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Secure Tax Customer-home</title>
+
         <meta name="viewport" content="width=device-width" />
         <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
         <link rel="stylesheet" href="css/normalize.css" />
@@ -14,13 +14,14 @@ and open the template in the editor.
         <!-- If you are using the gem version, you need this only -->
         <link rel="stylesheet" href="css/app.css" />
         <link rel ="stylesheet" href ="css/layout.css">
-        
+
         <script src="js/vendor/custom.modernizr.js"></script>
         <script src="js/vendor/jquery.js"></script>
         <script src="js/foundation/foundation.js"></script>
         <script src="js/foundation/foundation.section.js"></script>
         <script src="js/vendor/customer.js"></script>
         <script src="js/foundation/foundation.reveal.js"></script>
+        <script type="text/javascript" src="tinymce/js/tinymce/tinymce.min.js"></script>
         <script>
             document.write('<script src=/js/vendor/'
                     + ('__proto__' in {} ? 'zepto' : 'jquery')
@@ -31,43 +32,87 @@ and open the template in the editor.
         <script>
             $(document).foundation();
         </script>
-       
+        <script>
+            $(document).foundation('section', {deep_linking: true}, function(response) {
+                console.log(response.errors);
+            });
+        </script>
+        <script>
 
-        
+            $(document).ready(function() {
+                $("#buy").click(function() {
 
+                    $("#way-of-payment").show()
+
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function() {
+                $("#sel").click(function() {
+                    $("#points").text("0");
+                });
+
+                $("#cat1").click(function() {
+                    $("#points").text("10");
+                });
+                $("#cat2").click(function() {
+                    $("#points").text("20");
+                });
+                $("#cat3").click(function() {
+                    $("#points").text("30");
+                });
+                $("#cat4").click(function() {
+                    $("#points").text("40");
+                });
+                $("#cat5    ").click(function() {
+                    $("#points").text("50");
+                });
+
+            });
+        </script>
+        <script>
+            tinymce.init({
+                selector: "textarea",
+                menubar: false,
+                statusbar: false
+            });
+        </script>
+
+        <script src="js/vendor/jquery.js"></script>
     </head>
     <body>
         <header>
             <div class="row">
                 <div class="small-12 large-12 columns">
                     <nav class="top-bar-section">
-                        <img src ="http://placehold.it/250x45&text=sitename" />
+                        <img src ="http://placehold.it/250 x 45&text=sitename" />
                         <ul class="inline-list right ">
-                            <li><a href="#">Hello vino</a></li>
+                            <li><a href="#"> Hello vino </a></li>
                             <li><a href="#">Contact Us</a></li>
                             <li><a href="home.html">Logout</a></li>
                         </ul>
-
                     </nav>
                 </div>  
-                <div class="small-12 large-12 columns">
+                <div class="samll-12 large-12 columns">
                     <hr>
                 </div>
             </div>
 
+
+
+
         </header>
 
-        <div class="row">
-            <div class="small-12 large-12 columns menu" >
-                <ul class="inline-list">
-                    <li><a href="#">Home</a>
-                    <li><a href="category.html">Manage Categories</a>
-                    <li><a href="people.html">Manage People</a>
 
-                </ul>
-            </div>
-        </div>
-        <div class="row">
+        <div class="row"> <!-- start row div -->
+            <div class="small-12 large-12 columns">  <!-- start div with 12 columns -->
+                <div class="section-container auto" data-section>
+
+                    <section class="active">
+                        <p class="title" data-section-title><a href="#panel1">home</a></p>
+                        <div class="content" data-section-content>
+                            <div class="row">
             <div class="small-12 large-12 columns">
                 <table>
                     <thead>
@@ -116,15 +161,199 @@ and open the template in the editor.
         </div>
 
 
-    </body>
-    <footer>
-        <div class="row">
-            <div class="large-12 small-12 columns">
-                <hr>
+                             
+                        </div>
+                    </section>
+                     <section >
+                        <p class="title" data-section-title><a href="#panel1">Manage Categories</a></p>
+                        <div class="content" data-section-content>
+                              <div class="row">
+            <div class="small-6 large-6 columns">
+                <h4>Category</h4>
             </div>
-            <div class="small-12 large-12 columns">
-                <p> © 2013 Pay Tax. All rights reserved.</p>
+
+
+            <div class="small-12 large-12 columns ">
+                <table>
+                    <thead>
+
+
+                        <tr> 
+                            <th>
+                                Category 
+                            </th>
+                            <th width="10">
+                                Points
+                            </th>
+                            <th width="150">
+                                Created Date
+                            </th>
+                            <th width="150">
+                                Modified Date
+                            </th>
+                            <th>
+                                Created by
+                            </th>
+                            <th>Edit/Delete</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>category 1</td>
+                        <td>12</td>
+                        <td>27th Nov 2013</td>
+                        <td>None</td>
+                        <td>admin</td>
+                        <td id="edit-delete"><a href="edit-category.html">edit</a>/<a href="#">delete</a></td>
+
+                    </tr>
+                    <tr>
+                        <td>category 2</td>
+                        <td>12</td>
+                        <td>23th Nov 2013</td>
+                        <td>28th Nov 2013</td>
+                        <td>admin</td>
+                        <td id="edit-delete"><a href="#">edit</a>/<a href="#">delete</a></td>
+                    </tr>
+                    <tr>
+                        <td>category 3</td>
+                        <td>12</td>
+                        <td>27th Nov 2013</td>
+                        <td>None</td>
+                        <td>admin</td>
+                        <td id="edit-delete"><a href="#">edit</a>/<a href="#">delete</a></td>
+                    </tr>
+                    <tr>
+                        <td>category 4</td>
+                        <td>12</td>
+                        <td>27th Nov 2013</td>
+                        <td>None</td>
+                        <td>admin</td>
+                        <td id="edit-delete"><a href="#">edit</a>/<a href="#">delete</a></td>
+                    </tr>
+                    <tbody>
+
+                </table>
+
             </div>
         </div>
-    </footer>
+        <div class="row">
+            <div class="small-12 large-12 columns">
+                <hr>
+            </div>
+            <div class="large-12 small-12 columns">
+                <h4>Add New category</h4><br>
+            </div>
+            <div class="small-12 large-12 columns">
+                <label>Category Name</label><br>
+                <input style="width:200px" type="text" placeholder="Type your category name"><br>
+                <label>Points</label><br>
+                <input style="width:200px" type="text" placeholder="Type your points"><br>
+                <a href="add-category-with-message.html">   <button class="small">Add</button></a>
+            </div>
+        </div>
+
+                             
+                        </div>
+                    </section>
+                    <section >
+                        <p class="title" data-section-title><a href="#panel1">Manage People</a></p>
+                        <div class="content" data-section-content>
+                              <div class="row">
+            <div class="small-6 large-6 columns">
+                <h4>People</h4>
+                <h6><a style="text-decoration:underline" href="add-new-people.html">Add New people</a></h6><br>
+
+
+            </div>
+
+
+            <div class="small-12 large-12 columns ">
+                <table>
+                    <thead>
+
+
+                        <tr> 
+                            <th>
+                                Name
+                            <th width="10">
+                                Role
+                            </th>
+                            <th width="150">
+                                Created Date
+                            </th>
+                            <th width="150">
+                                Last Access
+                            </th>
+                            <th>
+                                Created by
+                            </th>
+                            <th>Edit/Delete</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>vinotha</td>
+                        <td>admin</td>
+                        <td>27th Nov 2013</td>
+                        <td>None</td>
+                        <td></td>
+                        <td id="edit-delete"><a href="edit-people.html">edit</a>/<a href="#" data-reveal-id="myModal">delete</a></td>
+
+                    </tr>
+                    <tr>
+                        <td>sharmila</td>
+                        <td>consultant</td>
+                        <td>23th Nov 2013</td>
+                        <td>28th Nov 2013</td>
+                        <td>admin</td>
+                        <td id="edit-delete"><a href="edit-people.html">edit</a>/<a href="#" data-reveal-id="myModal">delete</a></td>
+                    </tr>
+                    <tr>
+                        <td>thaiyalnayaki</td>
+                        <td>consultant</td>
+                        <td>27th Nov 2013</td>
+                        <td>None</td>
+                        <td>admin</td>
+                        <td id="edit-delete"><a href="edit-people.html">edit</a>/<a href="#" data-reveal-id="myModal">delete</a></td>
+                    </tr>
+                    <tr>
+                        <td>vino</td>
+                        <td>customer</td>
+                        <td>27th Nov 2013</td>
+                        <td>None</td>
+                        <td>admin</td>
+                        <td id="edit-delete"><a href="edit-people.html">edit</a>/<a href="#" data-reveal-id="myModal">delete</a></td>
+                    </tr>
+                    <tbody>
+
+                </table>
+                <div id="myModal" class="reveal-modal">
+                    <p>Are you sure to delete this people?</p>
+
+                    <a href="people.html"> <button>yes</button></a>
+                    <a class="close-reveal-modal">&#215;</a>
+                </div>
+
+            </div>
+        </div>
+
+                             
+                        </div>
+                    </section>
+                    
+                </div> 
+            </div><!-- start 12 columns div end-->
+        </div><!-- start row end -->
+
+        <footer>
+            <div class="row">
+                <div class="small-12 large-12 columns">
+                    <hr>
+                </div>  
+                <div class="small-12 large-12 columns">
+                    <p> © 2013 Pay Tax. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </body>
+
 </html>
