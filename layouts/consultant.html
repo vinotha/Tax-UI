@@ -5,7 +5,7 @@ and open the template in the editor.
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Secure Tax Customer-home</title>
+        <title>Secure Tax Consultant</title>
 
         <meta name="viewport" content="width=device-width" />
         <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
@@ -37,56 +37,14 @@ and open the template in the editor.
                 console.log(response.errors);
             });
         </script>
-        <script>
-
-            $(document).ready(function() {
-                $("#buy").click(function() {
-
-                    $("#way-of-payment").show()
-
-                });
-            });
-        </script>
-        <script>
-            $(document).ready(function() {
-                $("#sel").click(function() {
-                    $("#points").text("0");
-                });
-
-                $("#cat1").click(function() {
-                    $("#points").text("10");
-                });
-                $("#cat2").click(function() {
-                    $("#points").text("20");
-                });
-                $("#cat3").click(function() {
-                    $("#points").text("30");
-                });
-                $("#cat4").click(function() {
-                    $("#points").text("40");
-                });
-                $("#cat5    ").click(function() {
-                    $("#points").text("50");
-                });
-
-            });
-        </script>
-        <script>
-            tinymce.init({
-                selector: "textarea",
-                menubar: false,
-                statusbar: false
-            });
-        </script>
-
-        <script src="js/vendor/jquery.js"></script>
+        
     </head>
     <body>
         <header>
             <div class="row">
                 <div class="small-12 large-12 columns">
                     <nav class="top-bar-section">
-                        <img src ="http://placehold.it/250 x 45&text=sitename" />
+                        <img src ="http://placehold.it/250x45&text=sitename" />
                         <ul class="inline-list right ">
                             <li><a href="#"> Hello vino </a></li>
                             <li><a href="#">Contact Us</a></li>
@@ -112,48 +70,45 @@ and open the template in the editor.
                     <section class="active">
                         <p class="title" data-section-title><a href="#panel1">home</a></p>
                         <div class="content" data-section-content>
-                              <div class="row">
-        <div class="small-12 large-12 columns ">
-            <table>
-                <thead>
+                            <div class="row">
+                                <div class="small-12 large-12 columns ">
+                                    <table>
+                                        <thead>
+                                      <th>
+                                            Question
+                                        </th>
+                                        <th width="150">
+                                            Asked on
+                                        </th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><a href="answer.html" id="question">Does rolling a 401(k) into a roth IRA disqualify an individual from the earned income credit if their actual earnings are within the income window?</a><p class="tiny button radius disabled " style="display:inline;position:relative;left:2px;top:2px;bottom:2px;background-color: red ">New</p></td>
+                                                <td>12th Nov 2013</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#" id="question">What items fall under the category of 'securities'?</a><p class="tiny button radius disabled " style="display:inline;position:relative;left:2px;top:2px;bottom:2px;background-color: red ">New</p></td>
+                                                <td>12th Nov 2013</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#" id="question">Does the NRI have to pay property tax if they buy property in India? Can a person fill a NRI in a Income tax form if he has been out of India for six months though he is Indian citizen?</a></td>
+                                                <td>12th Nov 2013</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="answer.html" id  ="question">What is standard deduction?</a></td>
+                                                <td>12th Nov 2013</td>
+                                            </tr>
 
+                                        <tbody>
+                                    </table>
 
+                                </div>
+                            </div>
 
-                <th>
-                    Question
-                </th>
-                <th width="150">
-                    Asked on
-                </th>
-                </tr>
-                </thead>
-                 <tbody>
-                        <tr>
-                            <td><a href="answer.html" id="question">Does rolling a 401(k) into a roth IRA disqualify an individual from the earned income credit if their actual earnings are within the income window?</a><p class="tiny button radius disabled " style="display:inline;position:relative;left:2px;top:2px;bottom:2px;background-color: red ">New</p></td>
-                            <td>12th Nov 2013</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#" id="question">What items fall under the category of 'securities'?</a><p class="tiny button radius disabled " style="display:inline;position:relative;left:2px;top:2px;bottom:2px;background-color: red ">New</p></td>
-                            <td>12th Nov 2013</td>
-                        </tr>
-                        <tr>
-                            <td><a href="#" id="question">Does the NRI have to pay property tax if they buy property in India? Can a person fill a NRI in a Income tax form if he has been out of India for six months though he is Indian citizen?</a></td>
-                            <td>12th Nov 2013</td>
-                        </tr>
-                        <tr>
-                            <td><a href="answer.html" id  ="question">What is standard deduction?</a></td>
-                            <td>12th Nov 2013</td>
-                        </tr>
-
-                    <tbody>
-            </table>
-
-        </div>
-    </div>
-   
                         </div>
                     </section>
-                    
+
                 </div> 
             </div><!-- start 12 columns div end-->
         </div><!-- start row end -->
