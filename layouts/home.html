@@ -14,7 +14,13 @@ and open the template in the editor.
         <!-- If you are using the gem version, you need this only -->
         <link rel="stylesheet" href="css/app.css" />
         <link rel ="stylesheet" href ="css/layout.css">
-        <link href='http://fonts.googleapis.com/css?family=Frijole' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Montaga' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Montserrat+Subrayada' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Fenix' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Akronim' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lusitana' rel='stylesheet' type='text/css'>
+        
 
 
         <script src="js/vendor/custom.modernizr.js"></script>
@@ -39,12 +45,13 @@ and open the template in the editor.
                 console.log(response.errors);
             });
         </script>
+       
     </head>
     <body>
-        <header id="header">
+        <header>
             <div class="row">
                 <div class="small-12 large-12 columns">
-                    <span id="site-name">THE AUDITOR</span>
+                    <span class="site-name"> THE AUDITOR </span>
                 </div> 
 
             </div>
@@ -54,31 +61,31 @@ and open the template in the editor.
 
         <div class="row content-wrapper" >  <!-- start row div -->
             <div class="small-12 large-12 columns">  <!-- start div with 12 columns -->
-                <div class="section-container auto section-menu" data-section>
+                <div class="section-container tabs section-menu" data-section>
 
                     <section class="active">
-                        <p class="title section-menu" data-section-title><a class="section-menu" href="#panel1">Home</a></p>
+                        <p class="title" data-section-title><a href="#panel1">Home</a></p>
                         <div class="content" data-section-content>
                             <div class="row">
                                 <div class="small-6 large-6 columns " style="border-right: 1px solid grey">
-                                    <h3>Feature</h3>
+                                    <h3>Features</h3>
                                     <h5 id="first"><a href='#'>First Feature</a></h5>
                                     <p>Pay tax is a project built on the idea to make the ever increasing tax filing headache a thing of the past.You should find this website very easy and intuitive to use.See the Process Flow</p>
                                     <h5 id="first"><a href="#">Second Feature</a></h5>
                                     <p>Pay tax is a project built on the idea to make the ever increasing tax filing headache a thing of the past.You should find this website very easy and intuitive to use.See the Process Flow</p>
-                                    <h5><a href="#">Third Feature</a></h5>
+                                    <h5><a id="first"href="#">Third Feature</a></h5>
                                     <p>Pay tax is a project built on the idea to make the ever increasing tax filing headache a thing of the past.You should find this website very easy and intuitive to use.See the Process Flow</p>
-                                    <p>   <a href="#">See More Features</a></p>
+                                    <p><a href="#">See More Features</a></p>
                                 </div>
                                 <div class="small-6 large-6 columns">
                                     <div style="position: relative;height:365px">
-                                    <div class="section-container auto" data-section>
+                                    <div class="section-container auto section-login" data-section>
                                         <section class="active">
                                             <p class="title" data-section-title><a href="#panel1">Log In</a></p>
                                             <div class="content" data-section-content>
                                                 <h4> Log In</h4>    
-                                                <input class="tt" type="text" placeholder="username">
-                                                <input class="tt" type="password" placeholder="password">
+                                                <input class="tt" type="text" placeholder="Username">
+                                                <input class="tt" type="password" placeholder="Password">
                                                 <a href="customer.html">   <button class="small but">Log In</button></a>
                                                 <a href="#">Forgot password?</a>
                                             </div>
@@ -99,12 +106,12 @@ and open the template in the editor.
                                     </div> 
 </div>
                                     <div style="margin-top:20px;position:relative">
-                                        <h6>Contact Us</h6>
+                                        <p id="first">Contact Us</p>
                                         <p>Mobile-No: +9198578633</p>
                                         <p><a href="mailto:rajagopalan@edcellence.in">rajagopalan@edcellence.in</a></p>
                                         <p><a href="mailto:rajagopalan@edcellence.in">lakshminp.edcellence.in</a></p>
                                         <hr>
-                                        Follow Us<br>
+                                        <p>Follow Us</p>
                                         <a href="https://twitter.com/Ed_excellence">  
                                             <img src="http://placehold.it/30x30&text=t"></a>
                                         <a href="#"> <img src="http://placehold.it/30x30&text=f"></a>
@@ -201,9 +208,7 @@ and open the template in the editor.
         </div><!-- start row end -->
         <footer>
             <div class="row">
-                <div class="small-12 large-12 columns">
-                    <hr>
-                </div>  
+               
                 <div class="small-12 large-12 columns">
                     <p> © 2013 Pay Tax. All rights reserved.</p>
                 </div>
