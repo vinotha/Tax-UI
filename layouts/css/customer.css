@@ -5,15 +5,28 @@
     Description:
         Purpose of the stylesheet follows.
 */
-
+.create-question {
+    top:20px;
+    position:relative;
+}
+.category {
+    top:50px;
+    position:relative;
+}
 root { 
     display: block;
 }
 
+.select-box {
+   border:2px solid #7E7C6B;
+	border-radius:4px;
 
-body{
-  padding: 1em;
 }
+.top-bar-section ul {
+    background-color:none;
+}
+
+
 a{
   color: #739931;
 }
@@ -58,10 +71,10 @@ table.responsive-table{
   }
     
   table.responsive-table td:nth-child(1):before{
-    content: 'Number';
+    
   }
   table.responsive-table td:nth-child(2):before{
-    content: 'Name';
+   
   }
   table.responsive-table td:nth-child(1),
   table.responsive-table td:nth-child(2){
@@ -99,8 +112,21 @@ table.responsive-table{
     }
 }
 
-.custom-content {
-    top:60px;
-    position:relative;
+.section-container.tabs > section > .title a, .section-container.tabs > .section > .title a {
+    background-color: yellow;
+    border:none;
 }
-
+.section-container.tabs > section > .title, .section-container.tabs > .section > .title {
+    border:none;
+}
+.section-container.tabs > section > .title a, .section-container.tabs > .section > .title a:ahover {
+    background-color: pink;
+    font-style:italic;
+}
+.section-container.tabs > section.active > .title a, .section-container.tabs > .section.active > .title a {
+    background-color: white;
+    border:none;
+}
+.section-container .tabs {
+    background-color: red;  
+}

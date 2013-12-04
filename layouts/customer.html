@@ -14,7 +14,7 @@ and open the template in the editor.
         <!-- If you are using the gem version, you need this only -->
         <link rel="stylesheet" href="css/app.css" />
         <link rel ="stylesheet" href ="css/layout.css">
-
+        <link rel="stylesheet" href="css/customer.css">
         <script src="js/vendor/custom.modernizr.js"></script>
         <script src="js/vendor/jquery.js"></script>
         <script src="js/foundation/foundation.js"></script>
@@ -86,34 +86,32 @@ and open the template in the editor.
             <div class="row">
                 <div class="small-12 large-12 columns">
                     <nav class="top-bar-section">
-                        <img src ="http://placehold.it/250x45&text=sitename"/>
+                        <span class="site-name"> THE AUDITOR </span>
                         <ul class="inline-list right ">
-                            <li><a href="#"> Hello vino(70)</a></li>
+                            <li><label> Hello vinotha(70) </label></li>
                             <li><a href="#">Contact Us</a></li>
                             <li><a href="home.html">Logout</a></li>
                         </ul>
                     </nav>
                 </div> 
-                <div class="small-12 large-12 columns">
-                    <hr>
-                </div>
+                
             </div>
         </header>
 
 
-        <div class="row"> <!-- start row div -->
+        <div class="row content-wrapper"> <!-- start row div -->
             <div class="small-12 large-12 columns">  <!-- start div with 12 columns -->
-                <div class="section-container auto" data-section>
+                <div class="section-container auto section-login" data-section>
 
-                    <section class="active">
-                        <p class="title" data-section-title><a href="#panel1">home</a></p>
+                    <section>
+                        <p class="title" data-section-title><a href="#panel1">Home</a></p>
                         <div class="content" data-section-content>
 
                             <div class="row">
 
                                 <div class="small-12 large-12 columns">
 
-                                    <table>
+                                    <table class="layout display responsive-table">
                                         <thead>
                                             <tr>
 
@@ -127,11 +125,11 @@ and open the template in the editor.
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td ><a href="answer.html" id="question">Does rolling a 401(k) into a roth IRA disqualify an individual from the earned income credit if their actual earnings are within the income window?</a><p class="tiny button radius disabled " style="display:inline;position:relative;left:2px;top:2px;bottom:2px;background-color: red ">New</p></td>
+                                                <td ><a href="answer.html" id="question">Does rolling a 401(k) into a roth IRA disqualify an individual from the earned income credit if their actual earnings are within the income window?</a><label class="medium" style="display:inline;position:relative;left:2px;top:2px;bottom:2px;background-color: red;padding:2px;color:#FFFFFF; ">New</label></td>
                                                 <td>12th Nov 2013</td>
                                             </tr>
                                             <tr>
-                                                <td><a href="#" id="question">What items fall under the category of 'securities'?</a><p class="tiny button radius disabled " style="display:inline;position:relative;left:2px;top:2px;bottom:2px;background-color: red ">New</p></td>
+                                                <td><a href="#" id="question">What items fall under the category of 'securities'?</a><label class="tiny button radius disabled " style="display:inline;position:relative;left:2px;top:2px;bottom:2px;background-color: red ">New</label></td>
                                                 <td>12th Nov 2013</td>
                                             </tr>
                                             <tr>
@@ -152,7 +150,7 @@ and open the template in the editor.
 
                         </div>
                     </section>
-                    <section>
+                    <section class="active">
                         <p class="title" data-section-title><a href="#panel2">Create Question</a></p>
                         <div class="content" data-section-content>
 
@@ -163,51 +161,51 @@ and open the template in the editor.
                                     <textarea style="height:120px;" placeholder="Enter your question here"></textarea>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="small-5 large-5 columns" >
+                            <div class="row ">
+                                <div class="small-5 large-5 columns category " >
                                     <label for="category"> Category</label><br>
 
-                                    <select> 
-                                        <option id="sel" selected="selected" value="Choose ">choose your category</option>
-                                        <option id="cat1">Category 1</option>
-                                        <option id="cat2">Category 2</option>
-                                        <option id="cat3">Category 3</option>
-                                        <option id="cat4">Category 4</option>
-                                        <option id="cat5">Category 5</option>
+                                    <select class="select-box"> 
+                                        <option class="option-box" id="sel" selected="selected" value="Choose ">choose your category</option>
+                                        <option class="option-box" id="cat1">Category 1</option>
+                                        <option class="option-box" id="cat2">Category 2</option>
+                                        <option class="option-box" id="cat3">Category 3</option>
+                                        <option class="option-box" id="cat4">Category 4</option>
+                                        <option class="option-box" id="cat5">Category 5</option>
                                     </select>
                                 </div>
-                               </div>
-                            <div class="row">
-                                    <div class="small-3 large-3 columns">
+                               
+                            
+                                    <div class="small-3 large-3 columns category" >
                                          <label> Points</label><br>
                                         <span id="points">0</span>
                                     </div>
-                                </div>
-                            <div class="row">
-                                    <div class=" small-4 large-4 columns">
+                                
+                           
+                                    <div class=" small-4 large-4 columns category">
                                         <div>
-                                            <a href="buy-points.html">   <button class="medium">Buy Points</button></a>
+                                            <a href="buy-points.html">   <button class="medium but">Buy Points</button></a>
                                         </div>
                                     </div>
 
                                 </div>
                             
-                            <div class="row">
-                                <div class="small-12 large-12 columns" >
+                            <div class="row ">
+                                <div class="small-12 large-12 columns category" >
 
                                     <label for="file-upload" >Select & upload file</label><br>
 
                                     <input type="file" multiple> 
-                                    <button class="small">Upload</button>
+                                    <button class="small but">Upload</button>
 
 
-
+                                                                                                                                                                                                                                                                                                                        
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row ">
 
-                                <div class="small-12 large-12 columns"  >
-                                    <a href="create-question-with-message.html"> <button class="medium">Ask</button></a>
+                                <div class="small-12 large-12 columns category      "  >
+                                    <a href="create-question-with-message.html"> <button class="large but-blue">Ask</button></a>
                                 </div>
                             </div>
 
@@ -233,7 +231,7 @@ and open the template in the editor.
                             </div>
                             <div class="row">
                                 <div class="small-12 large-12 columns">
-                                    <button id="buy">Buy</button>
+                                    <button id="buy" class="but-blue">Buy</button>
                                 </div>
 
                             </div>
@@ -249,7 +247,7 @@ and open the template in the editor.
                                             <li><p><input type="radio" name="cc">Net Banking</p></li>
                                             <li><p><input type="radio" name="cc">Mobile balance</p></li>
                                         </ul>
-                                        <button class="small" >Submit</button>
+                                        <button class="small " >Submit</button>
                                     </div>
                                 </div>
                             </div>
@@ -262,11 +260,9 @@ and open the template in the editor.
 
         <footer>
             <div class="row">
+                 
                 <div class="small-12 large-12 columns">
-                    <hr>
-                </div>  
-                <div class="small-12 large-12 columns">
-                    <p> © 2013 Pay Tax. All rights reserved.</p>
+                    <p> ©2013 Pay Tax. All rights reserved.</p>
                 </div>
             </div>
         </footer>
