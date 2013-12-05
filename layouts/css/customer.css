@@ -5,12 +5,29 @@
     Description:
         Purpose of the stylesheet follows.
 */
-.create-question {
-    top:20px;
-    position:relative;
+.new {
+    background: none repeat scroll 0 0 #C12204;
+    border-radius:4px;
+    color: #FFFFFF;
+    font-size: 9px;
+    padding:4px;
+    height:10px;
+    width:10px;
+    text-shadow: 0px 0px 1px  #fff;
+    left:1px;
+}
+.tablerw {
+   background: #fdfff7; /* Old browsers */
+background: -moz-linear-gradient(top, #fdfff7 0%, #efefdb 100%, #efefdb 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fdfff7), color-stop(100%,#efefdb), color-stop(100%,#efefdb)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #fdfff7 0%,#efefdb 100%,#efefdb 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #fdfff7 0%,#efefdb 100%,#efefdb 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #fdfff7 0%,#efefdb 100%,#efefdb 100%); /* IE10+ */
+background: linear-gradient(to bottom, #fdfff7 0%,#efefdb 100%,#efefdb 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfff7', endColorstr='#efefdb',GradientType=0 ); /* IE6-9 */
 }
 .category {
-    top:50px;
+    top:20px;
     position:relative;
 }
 root { 
@@ -30,88 +47,10 @@ root {
 a{
   color: #739931;
 }
-.page{
-  max-width: 60em;
-  margin: 0 auto;
+table {
+    border: none;
+    color:#333300;
 }
-table th,
-table td{
-  text-align: left;
-}
-table.layout{
-  width: 100%;
-  border-collapse: collapse;
-}
-table.display{
-  margin: 1em 0;
-}
-table.display th,
-table.display td{
-  border: 1px solid #B3BFAA;
-  padding: .5em 1em;
-}
-
-table.display th{ background: #D5E0CC; }
-table.display td{ background: #fff; }
-
-table.responsive-table{
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
-}
-
-@media (max-width: 30em){
-    table.responsive-table{
-      box-shadow: none;  
-    }
-    table.responsive-table thead{
-      display: none; 
-    }
-  table.display th,
-  table.display td{
-    padding: .5em;
-  }
-    
-  table.responsive-table td:nth-child(1):before{
-    
-  }
-  table.responsive-table td:nth-child(2):before{
-   
-  }
-  table.responsive-table td:nth-child(1),
-  table.responsive-table td:nth-child(2){
-    padding-left: 25%;
-  }
-  table.responsive-table td:nth-child(1):before,
-  table.responsive-table td:nth-child(2):before{
-    position: absolute;
-    left: .5em;
-    font-weight: bold;
-  }
-  
-    table.responsive-table tr,
-    table.responsive-table td{
-        display: block;
-    }
-    table.responsive-table tr{
-        position: relative;
-        margin-bottom: 1em;
-    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.2);
-    }
-    table.responsive-table td{
-        border-top: none;
-    }
-    table.responsive-table td.organisationnumber{
-        background: #D5E0CC;
-        border-top: 1px solid #B3BFAA;
-    }
-    table.responsive-table td.actions{
-        position: absolute;
-        top: 0;
-        right: 0;
-        border: none;
-        background: none;
-    }
-}
-
 .section-container.tabs > section > .title a, .section-container.tabs > .section > .title a {
     background-color: yellow;
     border:none;

@@ -88,7 +88,7 @@ and open the template in the editor.
                     <nav class="top-bar-section">
                         <span class="site-name"> THE AUDITOR </span>
                         <ul class="inline-list right ">
-                            <li><label> Hello vinotha(70) </label></li>
+                            <li><span style="color:white;position:relative;top:9px;font-size:14px"> vinotha(70)</span></li>
                             <li><a href="#">Contact Us</a></li>
                             <li><a href="home.html">Logout</a></li>
                         </ul>
@@ -99,11 +99,11 @@ and open the template in the editor.
         </header>
 
 
-        <div class="row content-wrapper"> <!-- start row div -->
-            <div class="small-12 large-12 columns">  <!-- start div with 12 columns -->
+        <div class="row content-wrapper" > <!-- start row div -->
+            <div class="small-12 large-12 columns ">  <!-- start div with 12 columns -->
                 <div class="section-container auto section-login" data-section>
 
-                    <section>
+                    <section class="active">
                         <p class="title" data-section-title><a href="#panel1">Home</a></p>
                         <div class="content" data-section-content>
 
@@ -111,28 +111,28 @@ and open the template in the editor.
 
                                 <div class="small-12 large-12 columns">
 
-                                    <table class="layout display responsive-table">
+                                    <table>
                                         <thead>
                                             <tr>
 
                                                 <th>
                                                     Question
                                                 </th>
-                                                <th>
+                                                <th width="130">
                                                     Asked On
                                                 </th>
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            <tr>
-                                                <td ><a href="answer.html" id="question">Does rolling a 401(k) into a roth IRA disqualify an individual from the earned income credit if their actual earnings are within the income window?</a><label class="medium" style="display:inline;position:relative;left:2px;top:2px;bottom:2px;background-color: red;padding:2px;color:#FFFFFF; ">New</label></td>
+                                            <tr class="tablerw">
+                                                <td ><a href="answer.html" id="question">Does rolling a 401(k) into a roth IRA disqualify an individual from the earned income credit if their actual earnings are within the income window?</a><sup class="new">new</sup></td>
                                                 <td>12th Nov 2013</td>
                                             </tr>
                                             <tr>
-                                                <td><a href="#" id="question">What items fall under the category of 'securities'?</a><label class="tiny button radius disabled " style="display:inline;position:relative;left:2px;top:2px;bottom:2px;background-color: red ">New</label></td>
+                                                <td><a href="#" id="question">What items fall under the category of 'securities'?</a><sup class="new">new</sup></td>
                                                 <td>12th Nov 2013</td>
                                             </tr>
-                                            <tr>
+                                            <tr class="tablerw">
                                                 <td><a href="#" id="question">Does the NRI have to pay property tax if they buy property in India? Can a person fill a NRI in a Income tax form if he has been out of India for six months though he is Indian citizen?</a></td>
                                                 <td>12th Nov 2013</td>
                                             </tr>
@@ -150,19 +150,19 @@ and open the template in the editor.
 
                         </div>
                     </section>
-                    <section class="active">
+                    <section>
                         <p class="title" data-section-title><a href="#panel2">Create Question</a></p>
                         <div class="content" data-section-content>
 
                             <div class="row">
-                                <div class="small-12 large12 columns create-question">
+                                <div class="small-12 large12 columns">
 
                                     <label>Question</label><br>
-                                    <textarea style="height:120px;" placeholder="Enter your question here"></textarea>
+                                    <textarea style="height:120px;" placeholder="Enter your question here"></textarea><br>
                                 </div>
                             </div>
                             <div class="row ">
-                                <div class="small-5 large-5 columns category " >
+                                <div class="small-5 large-5 columns" >
                                     <label for="category"> Category</label><br>
 
                                     <select class="select-box"> 
@@ -176,13 +176,13 @@ and open the template in the editor.
                                 </div>
                                
                             
-                                    <div class="small-3 large-3 columns category" >
+                                    <div class="small-3 large-3 columns" >
                                          <label> Points</label><br>
                                         <span id="points">0</span>
                                     </div>
                                 
                            
-                                    <div class=" small-4 large-4 columns category">
+                                    <div class=" small-4 large-4 columns">
                                         <div>
                                             <a href="buy-points.html">   <button class="medium but">Buy Points</button></a>
                                         </div>
@@ -191,7 +191,7 @@ and open the template in the editor.
                                 </div>
                             
                             <div class="row ">
-                                <div class="small-12 large-12 columns category" >
+                                <div class="small-12 large-12 columns" >
 
                                     <label for="file-upload" >Select & upload file</label><br>
 
@@ -204,8 +204,8 @@ and open the template in the editor.
                             </div>
                             <div class="row ">
 
-                                <div class="small-12 large-12 columns category      "  >
-                                    <a href="create-question-with-message.html"> <button class="large but-blue">Ask</button></a>
+                                <div class="small-12 large-12 columns"  >
+                                    <a href="create-question-with-message.html"> <button class="medium but-blue">Ask</button></a>
                                 </div>
                             </div>
 
@@ -254,6 +254,66 @@ and open the template in the editor.
 
                         </div>
                     </section>
+                    <section>
+                        <p class="title" data-section-title><a href="#panel2">Activities</a></p>
+                        <div class="content" data-section-content>
+                            <span class="right">Your Current Points: 100</span>
+                            <h4>Points Decrease Details</h4>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <th>Question</th>
+                                        <th>Asked under</th>
+                                        <th>Asked on</th>
+                                        <th>Points decrease</th>
+                                        </tr>
+                                        <tr>
+                                        <td>Does rolling a 401(k) into a roth IRA disqualify an individual from the earned income credit if their actual earnings are within the income window?</td>
+                                        <td>Category1</td>
+                                        <td>29th Dec 2013</td>
+                                       
+                                        <td>10</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Question</td>
+                                        <td>What items fall under the category of 'securities'?</td>
+                                        <td>29th Dec 2013</td>
+                                        <td>20</td>
+                                        </tr>
+                                        <tr>
+                                        <td>What is standard deduction?</td>
+                                        <td>Category3</td>
+                                        <td>29th Dec 2013</td>
+                                        <td>30</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            <h4>Points Buying Details</h4>
+                            <table>
+                                <tr>
+                                    <th>Bought points </th>
+                                    
+                                    <th>Bought On </th>
+                                    <th> Cost<br>Rs/-</th>
+                                    </tr>
+                                    <tr>
+                                        <td>200</td>
+                                        <td>29th Nov 2013</td>  
+                                        <td>500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>200</td>
+                                        <td>28th Nov 2013</td>
+                                        <td>500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>200</td>
+                                        <td>27th Nov 2013</td>
+                                        <td>500</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </section>
                 </div> 
             </div><!-- start 12 columns div end-->
         </div><!-- start row end -->
@@ -262,7 +322,9 @@ and open the template in the editor.
             <div class="row">
                  
                 <div class="small-12 large-12 columns">
-                    <p> ©2013 Pay Tax. All rights reserved.</p>
+                    <p>&copy; 2013 Pay Tax. All rights reserved.</p>
+                    
+
                 </div>
             </div>
         </footer>
