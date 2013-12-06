@@ -48,7 +48,7 @@ a{
   color: #739931;
 }
 table {
-    border: none;
+    border:none;
     color:#333300;
 }
 .section-container.tabs > section > .title a, .section-container.tabs > .section > .title a {
@@ -68,4 +68,8 @@ table {
 }
 .section-container .tabs {
     background-color: red;  
+}
+.activity {
+    font-size:14px;
+    color:#0062A0;
 }
