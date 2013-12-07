@@ -1,12 +1,9 @@
-<!--
-To change this template, choose Tools | Templates
-and open the template in the editor.
--->
+
 <!DOCTYPE html>
 <html>
     <head>
         <title>Secure Tax Customer-home</title>
-
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
         <meta name="viewport" content="width=device-width" />
         <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
         <link rel="stylesheet" href="css/normalize.css" />
@@ -14,14 +11,6 @@ and open the template in the editor.
         <!-- If you are using the gem version, you need this only -->
         <link rel="stylesheet" href="css/app.css" />
         <link rel ="stylesheet" href ="css/layout.css">
-        <link rel ="stylesheet" href ="css/customer.css">
-        <link href='http://fonts.googleapis.com/css?family=Montaga' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Montserrat+Subrayada' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Fenix' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Akronim' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Lusitana' rel='stylesheet' type='text/css'>
-        
 
         <script src="js/vendor/custom.modernizr.js"></script>
         <script src="js/vendor/jquery.js"></script>
@@ -40,45 +29,7 @@ and open the template in the editor.
         <script>
             $(document).foundation();
         </script>
-        <script>
-            $(document).foundation('section', {deep_linking: true}, function(response) {
-                console.log(response.errors);
-            });
-        </script>
-        <script>
 
-            $(document).ready(function() {
-                $("#buy").click(function() {
-
-                    $("#way-of-payment").show()
-
-                });
-            });
-        </script>
-        <script>
-            $(document).ready(function() {
-                $("#sel").click(function() {
-                    $("#points").text("0");
-                });
-
-                $("#cat1").click(function() {
-                    $("#points").text("10");
-                });
-                $("#cat2").click(function() {
-                    $("#points").text("20");
-                });
-                $("#cat3").click(function() {
-                    $("#points").text("30");
-                });
-                $("#cat4").click(function() {
-                    $("#points").text("40");
-                });
-                $("#cat5    ").click(function() {
-                    $("#points").text("50");
-                });
-
-            });
-        </script>
         <script>
             tinymce.init({
                 selector: "textarea",
@@ -96,62 +47,65 @@ and open the template in the editor.
                     <nav class="top-bar-section">
                         <span class="site-name">THE AUDITOR</span>
                         <ul class="inline-list right ">
-                            <li><a href="#"> Hello vino </a></li>
+                            
                             <li><a href="#">Contact Us</a></li>
                             <li><a href="home.html">Logout</a></li>
                         </ul>
+                         <div class="right">
+                            <span class="name-label">Hello vinotha</span>
+                        </div>
                     </nav>
                 </div>  
-                
+
             </div>
         </header>
 
 
-        <div class="row"> <!-- start row div -->
+        <div class="row content-wrapper"> <!-- start row div -->
             <div class="small-12 large-12 columns">  <!-- start div with 12 columns -->
-                <div class="section-container auto" data-section>
+                <div class="section-container auto section-login" data-section>
 
                     <section class="active">
                         <p class="title" data-section-title><a href="#panel1">Home</a></p>
                         <div class="content" data-section-content>
                             <div class="row">
                                 <div class="small-12 large-12 columns">
-                                    <table class=" layout display responsive-table">
+                                    <table>
                                         <thead>
                                             <tr>
                                                 <th >Questions</th>
 
-                                                <th width="120">Asked on</th>
-                                                <th width="150">Asked By</th>
+                                                <th class="asked-on">Asked on</th>
+                                                <th class="asked-on">Asked By</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td><a href="answer.html" id="question">Does rolling a 401(k) into a roth IRA disqualify an individual from the earned income credit if their actual earnings are within the income window?</a><p class="tiny button radius disabled " style="display:inline;position:relative;left:2px;top:2px;bottom:2px;background-color: red ">New</p></td>
+                                                <td><a href="answer.html" class="question">Does rolling a 401(k) into a roth IRA disqualify an individual from the earned income credit if their actual earnings are within the income window?</a><sup class="new">new</sup></td>
 
                                                 <td>12th Nov 2013</td>
                                                 <td>vino</td>
                                             </tr>
                                             <tr>
-                                                <td><a href="#" id  ="question">What is standard deduction?</a></td>
+                                                <td><a href="#" class="question">What is standard deduction?</a><sup class="new">new</sup></td>
 
                                                 <td>12th Nov 2013</td>
                                                 <td>vino</td>
                                             </tr>
                                             <tr>
-                                                <td><a href="#" id="question">Does the NRI have to pay property tax if they buy property in India? Can a person fill a NRI in a Income tax form if he has been out of India for six months though he is Indian citizen?</a></td>
+                                                <td><a href="#" class="question">Does the NRI have to pay property tax if they buy property in India? Can a person fill a NRI in a Income tax form if he has been out of India for six months though he is Indian citizen?</a></td>
 
                                                 <td>12th Nov 2013</td>
                                                 <td>vino</td>
                                             </tr>
                                             <tr>
-                                                <td><a href="#" id="question">Does the NRI have to pay property tax if they buy property in India? Can a person fill a NRI in a Income tax form if he has been out of India for six months though he is Indian citizen?</a></td>
+                                                <td><a href="#" class="question">Does the NRI have to pay property tax if they buy property in India? Can a person fill a NRI in a Income tax form if he has been out of India for six months though he is Indian citizen?</a></td>
 
                                                 <td>12th Nov 2013</td>
                                                 <td>vino</td>
                                             </tr>
                                             <tr>
-                                                <td><a id="question" href="#">This is longer content Donec id elit non mi porta gravida at eget metus.</a></td>
+                                                <td><a class="question" href="#">This is longer content Donec id elit non mi porta gravida at eget metus.</a></td>
 
                                                 <td>12th Nov 2013</td>
                                                 <td>vino</td>
@@ -176,24 +130,22 @@ and open the template in the editor.
 
 
                                 <div class="small-12 large-12 columns ">
-                                    <table class="layout display responsive-table">
+                                    <table>
                                         <thead>
-
-
-                                            <tr> 
+                                            <tr>      
                                                 <th>
                                                     Category 
                                                 </th>
                                                 <th>
                                                     Points
                                                 </th>
-                                                <th>
+                                                <th class="asked-on">
                                                     Created Date
                                                 </th>
                                                 <th>
                                                     Modified Date
                                                 </th>
-                                                <th>
+                                                <th class="asked-on">
                                                     Created by
                                                 </th>
                                                 <th>Edit/Delete</th>
@@ -205,7 +157,7 @@ and open the template in the editor.
                                             <td>27th Nov 2013</td>
                                             <td>None</td>
                                             <td>admin</td>
-                                            <td id="edit-delete"><a href="edit-category.html">edit</a>/<a href="#">delete</a></td>
+                                            <td class="edit-delete"><a href="edit-category.html">edit</a>/<a href="#">delete</a></td>
 
                                         </tr>
                                         <tr>
@@ -214,7 +166,7 @@ and open the template in the editor.
                                             <td>23th Nov 2013</td>
                                             <td>28th Nov 2013</td>
                                             <td>admin</td>
-                                            <td id="edit-delete"><a href="#">edit</a>/<a href="#">delete</a></td>
+                                            <td class="edit-delete"><a href="#">edit</a>/<a href="#">delete</a></td>
                                         </tr>
                                         <tr>
                                             <td>category 3</td>
@@ -222,7 +174,7 @@ and open the template in the editor.
                                             <td>27th Nov 2013</td>
                                             <td>None</td>
                                             <td>admin</td>
-                                            <td id="edit-delete"><a href="#">edit</a>/<a href="#">delete</a></td>
+                                            <td class="edit-delete"><a href="#">edit</a>/<a href="#">delete</a></td>
                                         </tr>
                                         <tr>
                                             <td>category 4</td>
@@ -230,7 +182,7 @@ and open the template in the editor.
                                             <td>27th Nov 2013</td>
                                             <td>None</td>
                                             <td>admin</td>
-                                            <td id="edit-delete"><a href="#">edit</a>/<a href="#">delete</a></td>
+                                            <td class= "edit-delete"><a href="#">edit</a>/<a href="#">delete</a></td>
                                         </tr>
                                         <tbody>
 
@@ -263,14 +215,14 @@ and open the template in the editor.
                             <div class="row">
                                 <div class="small-6 large-6 columns">
                                     <h4>People</h4>
-                                    <h6><a style="text-decoration:underline" href="add-new-people.html">Add New people</a></h6><br>
+                                    <h6><a href="add-new-people.html"><u>Add New people</u></a></h6><br>
 
 
                                 </div>
 
 
                                 <div class="small-12 large-12 columns ">
-                                    <table class="layout display responsive-table">
+                                    <table>
                                         <thead>
 
 
@@ -298,7 +250,7 @@ and open the template in the editor.
                                             <td>27th Nov 2013</td>
                                             <td>None</td>
                                             <td></td>
-                                            <td id="edit-delete"><a href="edit-people.html">edit</a>/<a href="#" data-reveal-id="myModal">delete</a></td>
+                                            <td class="edit-delete"><a href="edit-people.html">edit</a>/<a href="#" data-reveal-id="myModal">delete</a></td>
 
                                         </tr>
                                         <tr>
@@ -307,7 +259,7 @@ and open the template in the editor.
                                             <td>23th Nov 2013</td>
                                             <td>28th Nov 2013</td>
                                             <td>admin</td>
-                                            <td id="edit-delete"><a href="edit-people.html">edit</a>/<a href="#" data-reveal-id="myModal">delete</a></td>
+                                            <td class="edit-delete"><a href="edit-people.html">edit</a>/<a href="#" data-reveal-id="myModal">delete</a></td>
                                         </tr>
                                         <tr>
                                             <td>thaiyalnayaki</td>
@@ -315,7 +267,7 @@ and open the template in the editor.
                                             <td>27th Nov 2013</td>
                                             <td>None</td>
                                             <td>admin</td>
-                                            <td id="edit-delete"><a href="edit-people.html">edit</a>/<a href="#" data-reveal-id="myModal">delete</a></td>
+                                            <td class="edit-delete"><a href="edit-people.html">edit</a>/<a href="#" data-reveal-id="myModal">delete</a></td>
                                         </tr>
                                         <tr>
                                             <td>vino</td>
@@ -323,7 +275,7 @@ and open the template in the editor.
                                             <td>27th Nov 2013</td>
                                             <td>None</td>
                                             <td>admin</td>
-                                            <td id="edit-delete"><a href="edit-people.html">edit</a>/<a href="#" data-reveal-id="myModal">delete</a></td>
+                                            <td class="edit-delete"><a href="edit-people.html">edit</a>/<a href="#" data-reveal-id="myModal">delete</a></td>
                                         </tr>
                                         <tbody>
 
@@ -344,9 +296,54 @@ and open the template in the editor.
                     <section>
                         <p class="title" data-section-title><a href="#panel3">Activities</a></p>
                         <div class="content" data-section-content>
+                            <div class="section-container auto" data-section>
+                                <section class="active">
+                                    <p class="title" data-section-title><a href="#">Customer</a></p>
+                                    <div class="content" data-section-content>
+                                        <h4>Customer activities</h4>
+                                        <div class="row activities">
+                                            <div class="small-12 large-12 columns">
+
+                                                <p> <b>On 28th Nov 2013</b>  <a  href="#">vinotha</a> has asked question "<i> Does rolling a 401(k) into a roth IRA disqualify an individual from the earned income credit if their actual earnings are within the income window?</i>" and loss "40" points</p>
+                                                <p> <b>On 28th Nov 2013</b>  <a  href="#">vinotha</a> has asked question "<i> Does rolling a 401(k) into a roth IRA disqualify an individual from the earned income credit if their actual earnings are within the income window?</i>" and loss "40" points</p>
+
+                                                <p><b>On 27th Nov 2013</b>  <a  href="#">vinotha</a> has asked question as "<i> Does rolling a 401(k) into a roth IRA disqualify an individual from the earned income credit if their actual earnings are within the income window?</i>" and loss "20" points</p>
+                                                <p><b>On 26th Nov 2013</b> <a>vinotha</a> has bought 200 points.</p>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </section>
+                                <section>
+                                    <p class="title" data-section-title><a href="#">Consultant</a></p>
+                                    <div class="content" data-section-content>
+                                        <div class="row activities">
+                                            <div class="small-12 large-12 columns">
+                                                <h4>Consultant Activities</h4>
+                                                <p><b>On Nov 28th 2013</b><a href="#"> consultant1</a> has posted the answer as<i> "No, earned income only includes all the taxable income and wages you get from working or from certain disability payments. Earned income does not include retirement, pay received for work while an inmate in a penal institution, interest and dividends, social security, unemployment benefits, alimony or child support as referenced in IRS Publication 596."</i> to the question as <i>"Does rolling a 401(k) into a roth IRA disqualify an individual from the earned income credit if their actual earnings are within the income window?"</i></p>
+                                                <p><b>On Nov 27th 2013</b><a href="#"> consultant2</a> has posted the answer as <i>"No, earned income only includes all the taxable income and wages you get from working or from certain disability payments. Earned income does not include retirement, pay received for work while an inmate in a penal institution, interest and dividends, social security, unemployment benefits, alimony or child support as referenced in IRS Publication 596."</i> to the question as <i>"Does rolling a 401(k) into a roth IRA disqualify an individual from the earned income credit if their actual earnings are within the income window?"</i></p>
+                                                <p><b>On Nov 26th 2013</b><a href="#"> consultant3</a> has posted the answer as <i>"No, earned income only includes all the taxable income and wages you get from working or from certain disability payments. Earned income does not include retirement, pay received for work while an inmate in a penal institution, interest and dividends, social security, unemployment benefits, alimony or child support as referenced in IRS Publication 596."</i> to the question as <i>"Does rolling a 401(k) into a roth IRA disqualify an individual from the earned income credit if their actual earnings are within the income window?"</i></p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </section>
+                                <section>
+                                    <p class="title" data-section-title><a href="#">Router</a></p>
+                                    <div class="content" data-section-content>
+                                        <div class="row activities">
+                                            <div class="small-12 large-12 columns">
+                                                <h4>Router Activities</h4>
+                                                <p><b>On 27th Nov 2013</b> <a href="#">router1</a> has assigned  question as <i>"Does rolling a 401(k) into a roth IRA disqualify an individual from the earned income credit if their actual earnings are within the income window?" </i>to <a href="">consultant1</a></p>
+                                                <p><b>On 26th Nov 2013</b><a href=""> router2</a> has assigned  <i>"Does rolling a 401(k) into a roth IRA disqualify an individual from the earned income credit if their actual earnings are within the income window?"</i> to <a href="#">consultant2</a></p>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
                         </div>
-                        
-                        </section>
+
+                    </section>
 
                 </div> 
             </div><!-- start 12 columns div end-->
@@ -354,9 +351,9 @@ and open the template in the editor.
 
         <footer>
             <div class="row">
-                
+
                 <div class="small-12 large-12 columns">
-                    <span> 2013 Pay Tax. All rights reserved.</span>
+                    <span> &copy;2013 Pay Tax. All rights reserved.</span>
                 </div>
             </div>
         </footer>

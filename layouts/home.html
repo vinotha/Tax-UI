@@ -1,13 +1,10 @@
-<!--
-To change this template, choose Tools | Templates
-and open the template in the editor.
--->
+
 <!DOCTYPE html>
 <html>
     <head>
         <title>Secure Tax Home</title>
 
-        <meta name="viewport" content="width=device-width" />
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
         <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/foundation.css" />
@@ -15,13 +12,10 @@ and open the template in the editor.
         <link rel="stylesheet" href="css/app.css" />
         <link rel ="stylesheet" href ="css/layout.css">
         <link href='http://fonts.googleapis.com/css?family=Montaga' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Montserrat+Subrayada' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Fenix' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Akronim' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Lusitana' rel='stylesheet' type='text/css'>
-        
-
 
         <script src="js/vendor/custom.modernizr.js"></script>
         <script src="js/vendor/jquery.js"></script>
@@ -35,17 +29,9 @@ and open the template in the editor.
                     + ('__proto__' in {} ? 'zepto' : 'jquery')
                     + '.js><\/script>');
         </script>
-
-
         <script>
             $(document).foundation();
         </script>
-        <script>
-            $(document).foundation('section', {deep_linking: true}, function(response) {
-                console.log(response.errors);
-            });
-        </script>
-       
     </head>
     <body>
         <header>
@@ -53,75 +39,73 @@ and open the template in the editor.
                 <div class="small-12 large-12 columns">
                     <span class="site-name"> THE AUDITOR </span>
                 </div> 
-
             </div>
-
         </header>
-
 
         <div class="row content-wrapper" >  <!-- start row div -->
             <div class="small-12 large-12 columns">  <!-- start div with 12 columns -->
-                <div class="section-container auto section-login " data-section>
+                <div class="section-container tabs section-login " data-section>
 
                     <section class="active">
                         <p class="title" data-section-title><a href="#panel1">Home</a></p>
                         <div class="content" data-section-content>
                             <div class="row">
-                                <div class="small-6 large-6 columns " style="border-right: 1px solid grey">
+                                <div class="small-6 large-6 columns feature-wrapper">
                                     <h3>Features</h3>
-                                    <h5 id="first"><a href='#'>First Feature</a></h5>
+                                    <h5 class="first" > <a href='#'>First Feature</a></h5>
                                     <p>Pay tax is a project built on the idea to make the ever increasing tax filing headache a thing of the past.You should find this website very easy and intuitive to use.See the Process Flow</p>
-                                    <h5 id="first"><a href="#">Second Feature</a></h5>
+                                    <h5 class="first" ><a href="#">Second Feature</a></h5>
                                     <p>Pay tax is a project built on the idea to make the ever increasing tax filing headache a thing of the past.You should find this website very easy and intuitive to use.See the Process Flow</p>
-                                    <h5><a id="first"href="#">Third Feature</a></h5>
+                                    <h5><a class="first" href="#">Third Feature</a></h5>
                                     <p>Pay tax is a project built on the idea to make the ever increasing tax filing headache a thing of the past.You should find this website very easy and intuitive to use.See the Process Flow</p>
-                                    <h5><a id="first"href="#">Third Feature</a></h5>
+                                    <h5><a class="first" href="#">Third Feature</a></h5>
                                     <p>Pay tax is a project built on the idea to make the ever increasing tax filing headache a thing of the past.You should find this website very easy and intuitive to use.See the Process Flow</p>
-                                    <h5><a id="first"href="#">Third Feature</a></h5>
+                                    <h5><a class="first" href="#">Third Feature</a></h5>
                                     <p>Pay tax is a project built on the idea to make the ever increasing tax filing headache a thing of the past.You should find this website very easy and intuitive to use.See the Process Flow</p>
 
 
                                     <p><a href="#">See More Features</a></p>
                                 </div>
                                 <div class="small-6 large-6 columns">
-                                    <div style="position: relative;height:365px">
-                                    <div class="section-container auto section-login" data-section>
-                                        <section class="active">
-                                            <p class="title login" data-section-title><a href="#panel1">Log In</a></p>
-                                            <div class="content" data-section-content>
-                                                <h4> Log In</h4>    
-                                                <input class="tt" type="text" placeholder="Username">
-                                                <input class="tt" type="password" placeholder="Password">
-                                                <a href="customer.html">   <button class="small but">Log In</button></a>
-                                                <a href="#">Forgot password?</a>
-                                            </div>
-                                        </section>
+                                    <div class="login-form-wrapper">
+                                        <div class="section-container auto section-login" data-section>
+                                            <section class="active">
+                                                <p class="title" data-section-title><a href="#panel1">Log In</a></p>
+                                                <div class="content" data-section-content>
+                                                    <h4> Log In</h4>    
+                                                    <input class="tt" type="text" placeholder="Username">
+                                                    <input class="tt" type="password" placeholder="Password">
+                                                    <button class="small but">Log In</button>
+                                                    <a href="#">Forgot password?</a>
+                                                </div>
+                                            </section>
 
-                                        <section >
-                                            <p class="title" data-section-title><a href="#panel2">Register</a></p>
-                                            <div class="content" data-section-content>
-                                                <div >
-                                                <h4> Register Now</h4>
-                                                <input class="tt" type="text" placeholder="username" pattern="">
-                                                <input class="tt" type="email" placeholder="Email Id">
-                                                <input class="tt" type="password" placeholder="password">
-                                                <input class="tt"  type="password" placeholder="Re-Enter password">
-                                                <a href="#">  <button class="small but">Sign Up</button></a>
-                                            </div>
-                                        </section>
-                                    </div> 
-</div>
-                                    <div style="margin-top:20px;position:relative">
-                                        <p id="first">Contact Us</p>
+                                            <section>
+                                                <p class="title" data-section-title><a href="#panel2">Register</a></p>
+                                                <div class="content" data-section-content>
+                                                    <div class="sign-up-form">
+                                                        <h4> Register Now</h4>
+                                                        <input class="tt" type="text" placeholder="username" pattern="">
+                                                        <input class="tt" type="email" placeholder="Email Id">
+                                                        <input class="tt" type="password" placeholder="password">
+                                                        <input class="tt"  type="password" placeholder="Re-Enter password">
+                                                        <button class="small but">Sign Up</button>
+                                                    </div>
+                                                </div>
+                                            </section>
+                                        </div> 
+                                    </div>
+                                    <div class="contact">
+                                        <p class="first">Contact Us</p>
                                         <p>Mobile-No: +9198578633</p>
                                         <p><a href="mailto:rajagopalan@edcellence.in">rajagopalan@edcellence.in</a></p>
                                         <p><a href="mailto:rajagopalan@edcellence.in">lakshminp.edcellence.in</a></p>
                                         <hr>
-                                        <p id="first">Follow Us</p>
+                                        <p class="first">Follow Us</p>
                                         <a href="https://twitter.com/Ed_excellence">  
-                                            <img src="img/twitter.jpeg" height="40" width="40"></a>
-                                        <a href="#"> <img height="45" width="45" src="img/facebook.jpeg"></a>
-                                        <a href="#"> <img src="img/in.jpeg" height="40" width="40">  </a>
+                                            <img src="img/twitter.jpeg" height="40" width="40" alt="twitter"></a>
+                                        <a href="#"> <img height="45" width="45" src="img/facebook.jpeg" alt="facebook"></a>
+                                        <a href="#"> <img src="img/in.jpeg" height="40" width="40" alt="Linked in">  </a>
 
                                     </div>
                                 </div>
@@ -134,7 +118,7 @@ and open the template in the editor.
                         <div class="content" data-section-content>
                             <div class="row">
                                 <div class="small-12 large-12 columns">
-                                    <img src="img/hello.jpg">
+                                    <img src="img/hello.jpg" alt="Hellow">
                                 </div>
                             </div>
                             <div class="row">
@@ -144,41 +128,44 @@ and open the template in the editor.
                                 </div>
 
 
-                                <div class="small-6 large-6 columns" style="margin-top:20px;position:relative">
+                                <div class="small-6 large-6 columns services">
                                     <img src="http://placehold.it/200x100">
                                 </div>
                             </div>
-                             <div class="row">
+                            <div class="row">
                                 <div class="small-6 large-6 columns">
                                     <p><b>Services 1</b></p>
                                     <p>Pay tax is a project built on the idea to make the ever increasing tax filing headache a thing of the past.You should find this website very easy and intuitive to use.See the Process Flow</p>
                                 </div>
 
 
-                                <div class="small-6 large-6 columns" style="margin-top:20px;position:relative">
+                                <div class="small-6 large-6 columns services" >
                                     <img src="http://placehold.it/200x100">
                                 </div>
                             </div>
-                             <div class="row">
+                            <div class="row">
                                 <div class="small-6 large-6 columns">
                                     <p><b>Services 1</b></p>
                                     <p>Pay tax is a project built on the idea to make the ever increasing tax filing headache a thing of the past.You should find this website very easy and intuitive to use.See the Process Flow</p>
                                 </div>
 
 
-                                <div class="small-6 large-6 columns" style="margin-top:20px;position:relative">
+                                <div class="small-6 large-6 columns services" >
                                     <img src="http://placehold.it/200x100">
                                 </div>
                             </div>
 
                         </div>
-                        <div class="row">
 
-                        </div>
                     </section>
                     <section>
                         <p class="title" data-section-title><a href="#panel3">About</a></p>
                         <div class="content" data-section-content>
+                            <div class="row">
+                                <div class="small-12 large-12 columns">
+                                    <h4>About</h4>
+                                    </div>
+                                </div>
                             <div class="row">
                                 <div class="small-12 large-12 columns">
                                     <div class="small-3 large-3 columns">
@@ -188,6 +175,7 @@ and open the template in the editor.
                                         <p>As a web developer, third party API integration is something you will have to face. Especially with the current trend, we have facebook, twitter, flickr etc. Today, we are going to look at dribbble's API. Dribbble is a place to show off your design, it's based on invitation basis, therefore, most designs are of high quality.</p>
                                     </div>
                                 </div>
+                               
                                 <div class="small-12 large-12 columns">
                                     <div class="small-8 large-8 columns">
                                         <p>As a web developer, third party API integration is something you will have to face. Especially with the current trend, we have facebook, twitter, flickr etc. Today, we are going to look at dribbble's API. Dribbble is a place to show off your design, it's based on invitation basis, therefore, most designs are of high quality.</p>
@@ -197,7 +185,7 @@ and open the template in the editor.
                                     </div>
                                 </div>
 
-                                 <div class="small-12 large-12 columns">
+                                <div class="small-12 large-12 columns">
                                     <div class="small-3 large-3 columns">
                                         <img src="http://placehold.it/134x134&text=img">
                                     </div>
@@ -214,9 +202,9 @@ and open the template in the editor.
         </div><!-- start row end -->
         <footer>
             <div class="row">
-               
+
                 <div class="small-12 large-12 columns">
-                    <p> © 2013 Pay Tax. All rights reserved.</p>
+                    <p> &copy;2013 Pay Tax. All rights reserved.</p>
                 </div>
             </div>
         </footer>     

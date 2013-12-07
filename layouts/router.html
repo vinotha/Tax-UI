@@ -1,27 +1,16 @@
-<!--
-To change this template, choose Tools | Templates
-and open the template in the editor.
--->
+
 <!DOCTYPE html>
 <html>
     <head>
         <title>Secure Tax Customer-home</title>
 
-        <meta name="viewport" content="width=device-width" />
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
         <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/foundation.css" />
         <!-- If you are using the gem version, you need this only -->
         <link rel="stylesheet" href="css/app.css" />
         <link rel ="stylesheet" href ="css/layout.css">
-        <link rel ="stylesheet" href ="css/customer.css">
-        <link href='http://fonts.googleapis.com/css?family=Montaga' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Montserrat+Subrayada' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Fenix' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Akronim' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Lusitana' rel='stylesheet' type='text/css'>
-        
 
         <script src="js/vendor/custom.modernizr.js"></script>
         <script src="js/vendor/jquery.js"></script>
@@ -40,45 +29,7 @@ and open the template in the editor.
         <script>
             $(document).foundation();
         </script>
-        <script>
-            $(document).foundation('section', {deep_linking: true}, function(response) {
-                console.log(response.errors);
-            });
-        </script>
-        <script>
 
-            $(document).ready(function() {
-                $("#buy").click(function() {
-
-                    $("#way-of-payment").show()
-
-                });
-            });
-        </script>
-        <script>
-            $(document).ready(function() {
-                $("#sel").click(function() {
-                    $("#points").text("0");
-                });
-
-                $("#cat1").click(function() {
-                    $("#points").text("10");
-                });
-                $("#cat2").click(function() {
-                    $("#points").text("20");
-                });
-                $("#cat3").click(function() {
-                    $("#points").text("30");
-                });
-                $("#cat4").click(function() {
-                    $("#points").text("40");
-                });
-                $("#cat5    ").click(function() {
-                    $("#points").text("50");
-                });
-
-            });
-        </script>
         <script>
             tinymce.init({
                 selector: "textarea",
@@ -86,23 +37,24 @@ and open the template in the editor.
                 statusbar: false
             });
         </script>
-
-        <script src="js/vendor/jquery.js"></script>
     </head>
     <body>
         <header>
             <div class="row">
                 <div class="small-12 large-12 columns">
                     <nav class="top-bar-section">
-                       <span class="site-name">THE AUDITOR </span>
+                        <span class="site-name">THE AUDITOR </span>
                         <ul class="inline-list right ">
-                            <li><a href="#"> Hello vino </a></li>
                             <li><a href="#">Contact Us</a></li>
                             <li><a href="home.html">Logout</a></li>
                         </ul>
+                        <div class="right">
+                            <span class="name-label">Hello vinotha</span>
+                        </div>
                     </nav>
+
                 </div>  
-               
+
             </div>
 
 
@@ -111,115 +63,97 @@ and open the template in the editor.
         </header>
 
 
-        <div class="row"> <!-- start row div -->
+        <div class="row content-wrapper"> <!-- start row div -->
             <div class="small-12 large-12 columns">  <!-- start div with 12 columns -->
-                <div class="section-container auto" data-section>
+                <div class="section-container auto section-login " data-section>
 
                     <section class="active">
-                        <p class="title" data-section-title><a href="#panel1">home</a></p>
+                        <p class="title" data-section-title><a href="#panel1">Home</a></p>
                         <div class="content" data-section-content>
-                             <div class="row">
+                            <div class="row">
 
 
-            <div class="large-12 small-12 columns">
-                <h5>Assign Questions To Consultants</h5><br>
-            </div>
-            <div class="small-12 large-12 columns">
-                <label>Selected Questions send to</label> <br>
-            </div>
-            <div class="small-5 large-5 columns">
-                <select>
-                    <option>Consultant 1</option>
-                    <option>Consultant 2</option>
-                    <option>Consultant 3</option>
-                    <option>Consultant 4</option>
-                </select>
-            </div>
-            <div class="small-6 large-6 columns">
-              <a href="router-with-message.html">  <button class="small">send  </button></a>
-               
-            </div>
-            <div class="small-12 large-12 columns">
-                <table class="layout display responsive-table">
-                    <thead>
-                        <tr>
-                            <th>
+                                <div class="large-12 small-12 columns">
+                                    <h5>Assign Questions To Consultants</h5><br>
+                                </div>
+                                <div class="small-12 large-12 columns">
+                                    <label>Selected Questions send to</label> <br>
+                                </div>
+                                <div class="small-5 large-5 columns">
+                                    <select class="select-box">
+                                        <option>Consultant 1</option>
+                                        <option>Consultant 2</option>
+                                        <option>Consultant 3</option>
+                                        <option>Consultant 4</option>
+                                    </select>
+                                </div>
+                                <div class="small-6 large-6 columns">
+                                    <a href="router-with-message.html">  <button class="small but-blue">send  </button></a>
 
-                            </th>
-                            <th>
-                                Question
-                            </th>
-                            <th width="120">
-                             Asked on
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr><td><input type="checkbox"></td>
-                          <td><a href="answer.html" id="question">Does rolling a 401(k) into a roth IRA disqualify an individual from the earned income credit if their actual earnings are within the income window?</a><p class="tiny button radius disabled " style="display:inline;position:relative;left:2px;top:2px;bottom:2px;background-color: red ">New</p></td>
-                            <td>12th Nov 2013</td>
-                        </tr>
-                        <tr><td><input type="checkbox"></td>
-                           <td><a href="#" id="question">What items fall under the category of 'securities'?</a><p class="tiny button radius disabled " style="display:inline;position:relative;left:2px;top:2px;bottom:2px;background-color: red ">New</p></td>
-                            <td>12th Nov 2013</td>
-                        </tr>
-                        <tr><td><input type="checkbox"></td>
-                            <td><a href="#" id="question">Does the NRI have to pay property tax if they buy property in India? Can a person fill a NRI in a Income tax form if he has been out of India for six months though he is Indian citizen?</a></td>
-                            <td>12th Nov 2013</td>
-                        </tr>
-                        <tr><td><input type="checkbox"></td>
-                            <td><a href="#" id  ="question">What is standard deduction?</a></td>
-                            <td>12th Nov 2013</td>
-                        </tr>
+                                </div>
+                                <div class="small-12 large-12 columns">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>
 
-                    <tbody>
+                                                </th>
+                                                <th>
+                                                    Question
+                                                </th>
+                                                <th>
+                                                    Asked on
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr><td><input type="checkbox"></td>
+                                                <td><a href="answer.html" class="question">Does rolling a 401(k) into a roth IRA disqualify an individual from the earned income credit if their actual earnings are within the income window?</a><sup class="new">new</sup></td>
+                                                <td>12th Nov 2013</td>
+                                            </tr>
+                                            <tr><td><input type="checkbox"></td>
+                                                <td><a href="#" class="question">What items fall under the category of 'securities'?</a><sup class="new">new</sup></td>
+                                                <td>12th Nov 2013</td>
+                                            </tr>
+                                            <tr><td><input type="checkbox"></td>
+                                                <td><a href="#" class="question">Does the NRI have to pay property tax if they buy property in India? Can a person fill a NRI in a Income tax form if he has been out of India for six months though he is Indian citizen?</a></td>
+                                                <td>12th Nov 2013</td>
+                                            </tr>
+                                            <tr><td><input type="checkbox"></td>
+                                                <td><a href="#" class ="question">What is standard deduction?</a></td>
+                                                <td>12th Nov 2013</td>
+                                            </tr>
 
-                </table>
-            </div>
-        </div>
+                                        <tbody>
+
+                                    </table>
+                                </div>
+                            </div>
 
                         </div>
                     </section>
                     <section>
-                       <p class="title" data-section-title><a href="#panel1">Activites</a></p>
+                        <p class="title" data-section-title><a href="#panel1">Activities</a></p>
                         <div class="content" data-section-content>
-                            <table>
-                                <tr>
-                                    <th>Question</th>
-                                    <th>Assigned to</th>
-                                    <th>Assigned on</th>
-                                    <th>Asked By </th>
-                                    </tr>
-                                    <tr>
-                                    <td>Does rolling a 401(k) into a roth IRA disqualify an individual from the earned income credit if their actual earnings are within the income window?Does rolling a 401(k) into a roth IRA disqualify an individual from the earned income credit if their actual earnings are within the income window?</td>
-                                    <td>consultant 1</td>
-                                    <td>29th Nov 2013</td>
-                                    <td>customer1</td>
-                                    </tr>
-                                    <tr>
-                                    <td>What items fall under the category of 'securities'?</td>
-                                    <td>consultant 2</td>
-                                    <td>29th Nov 2013</td>
-                                    <td>customer2</td>
-                                    </tr>
-                                    <tr>
-                                    <td>What is standard deduction?</td>
-                                    <td>consultant 3</td>
-                                    <td>29th Nov 2013</td>
-                                    <td>customer3</td>
-                                    </tr>
-                            </table>
+                            <div class="row activities">
+                                <div class="small-12 large-12 columns">
+                                    <h4>Activities</h4>
+                                    <p><b>On 26th Nov 2013</b> <a href="#">router1</a> has assigned  question as <i>"Does rolling a 401(k) into a roth IRA disqualify an individual from the earned income credit if their actual earnings are within the income window?" </i>to <a href="">consultant1</a></p>
+                                    <p><b>On 26th Nov 2013</b><a href=""> router1</a> has assigned  <i>"Does rolling a 401(k) into a roth IRA disqualify an individual from the earned income credit if their actual earnings are within the income window?"</i> to <a href="#">consultant2</a></p>
+
+                                </div>
                             </div>
-</section>                    
+                        </div>
+                    </section>                    
                 </div> 
             </div><!-- start 12 columns div end-->
         </div><!-- start row end -->
 
         <footer>
             <div class="row">
-                
+
                 <div class="small-12 large-12 columns">
-                    <p> © 2013 Pay Tax. All rights reserved.</p>
+                    <p> &copy;2013 Pay Tax. All rights reserved.</p>
                 </div>
             </div>
         </footer>

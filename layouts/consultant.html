@@ -1,13 +1,10 @@
-<!--
-To change this template, choose Tools | Templates
-and open the template in the editor.
--->
+
 <!DOCTYPE html>
 <html>
     <head>
         <title>Secure Tax Consultant</title>
 
-        <meta name="viewport" content="width=device-width" />
+         <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
         <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/foundation.css" />
@@ -37,7 +34,7 @@ and open the template in the editor.
                 console.log(response.errors);
             });
         </script>
-        
+
     </head>
     <body>
         <header>
@@ -46,57 +43,52 @@ and open the template in the editor.
                     <nav class="top-bar-section">
                         <span class="site-name">THE AUDITOR</span>
                         <ul class="inline-list right ">
-                            <li><a href="#"> Hello vino </a></li>
                             <li><a href="#">Contact Us</a></li>
                             <li><a href="home.html">Logout</a></li>
                         </ul>
+                         <div class="right">
+                            <span class="name-label">Hello vinotha</span>
+                        </div>
                     </nav>
                 </div>  
-                <div class="samll-12 large-12 columns">
-                    <hr>
-                </div>
             </div>
-
-
-
-
         </header>
 
 
-        <div class="row"> <!-- start row div -->
+        <div class="row content-wrapper"> <!-- start row div -->
             <div class="small-12 large-12 columns">  <!-- start div with 12 columns -->
-                <div class="section-container auto" data-section>
+                <div class="section-container auto section-login" data-section>
 
                     <section class="active">
-                        <p class="title" data-section-title><a href="#panel1">home</a></p>
+                        <p class="title" data-section-title><a href="#panel1">Home</a></p>
                         <div class="content" data-section-content>
                             <div class="row">
                                 <div class="small-12 large-12 columns ">
                                     <table>
                                         <thead>
-                                      <th>
+                                        <th>
                                             Question
                                         </th>
-                                        <th width="150">
+                                        <th class="asked-on">
                                             Asked on
                                         </th>
                                         </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td><a href="answer.html" id="question">Does rolling a 401(k) into a roth IRA disqualify an individual from the earned income credit if their actual earnings are within the income window?</a><p class="tiny button radius disabled " style="display:inline;position:relative;left:2px;top:2px;bottom:2px;background-color: red ">New</p></td>
+                                                <td><a href="answer.html" class="question">Does rolling a 401(k) into a roth IRA disqualify an individual from the earned income credit if their actual earnings are within the income window?</a><sup class="new">new</sup></td>
                                                 <td>12th Nov 2013</td>
                                             </tr>
                                             <tr>
-                                                <td><a href="#" id="question">What items fall under the category of 'securities'?</a><p class="tiny button radius disabled " style="display:inline;position:relative;left:2px;top:2px;bottom:2px;background-color: red ">New</p></td>
+                                                <td><a href="#" class="question">What items fall under the category of 'securities'?</a><sup class="new">new</sup></td>
                                                 <td>12th Nov 2013</td>
                                             </tr>
                                             <tr>
-                                                <td><a href="#" id="question">Does the NRI have to pay property tax if they buy property in India? Can a person fill a NRI in a Income tax form if he has been out of India for six months though he is Indian citizen?</a></td>
+                                                <td><a href="#" class="question">Does the NRI have to pay property tax if they buy property in India? Can a person fill a NRI in a Income tax form if he has been out of India for six months though he is Indian citizen?</a></td>
                                                 <td>12th Nov 2013</td>
                                             </tr>
                                             <tr>
-                                                <td><a href="answer.html" id  ="question">What is standard deduction?</a></td>
+                                                <td><a href="answer.html" class="question">What is standard deduction?</a></td>
                                                 <td>12th Nov 2013</td>
                                             </tr>
 
@@ -108,32 +100,18 @@ and open the template in the editor.
 
                         </div>
                     </section>
-                     <section>
-                       <p class="title" data-section-title><a href="#panel1">Activities</a></p>
+                    <section>
+                        <p class="title" data-section-title><a href="#panel1">Activities</a></p>
                         <div class="content" data-section-content>
-                            <table>
-                                <tr>
-                                    <th>Question</th>
-                                    <th>Number of times answered</th>
-                                    </tr>
-                                    <tr>
-                                    <td>Does rolling a 401(k) into a roth IRA disqualify an individual from the earned income credit if their actual earnings are within the income window?</td>
-                                    <td>4</td>
-                                    
-                                    </tr>
-                                    <tr>
-                                    <td>What items fall under the category of 'securities'?</td>
-                                    <td>3</td>
-                                   
-                                    </tr>
-                                    <tr>
-                                    <td>What is standard deduction?</td>
-                                    <td>4</td>
-                                    
-                                    </tr>
-                            </table>
+                            <div class="row activities">
+                                <div class="small-12 large-12 columns">
+                                    <p><b>On Nov 28th 2013</b><a href="#"> consultant1</a> has posted the answer as <i>"No, earned income only includes all the taxable income and wages you get from working or from certain disability payments. Earned income does not include retirement, pay received for work while an inmate in a penal institution, interest and dividends, social security, unemployment benefits, alimony or child support as referenced in IRS Publication 596."</i> to the question as<i>"Does rolling a 401(k) into a roth IRA disqualify an individual from the earned income credit if their actual earnings are within the income window?"</i></p>
+                                    <p><b>On Nov 27th 2013</b><a href="#"> consultant1</a> has posted the answer as <i>"No, earned income only includes all the taxable income and wages you get from working or from certain disability payments. Earned income does not include retirement, pay received for work while an inmate in a penal institution, interest and dividends, social security, unemployment benefits, alimony or child support as referenced in IRS Publication 596."</i> to the question as<i>"Does rolling a 401(k) into a roth IRA disqualify an individual from the earned income credit if their actual earnings are within the income window?"</i></p>
+                                    <p><b>On Nov 26th 2013</b><a href="#"> consultant1</a> has posted the answer as <i>"No, earned income only includes all the taxable income and wages you get from working or from certain disability payments. Earned income does not include retirement, pay received for work while an inmate in a penal institution, interest and dividends, social security, unemployment benefits, alimony or child support as referenced in IRS Publication 596."</i> to the question as<i>"Does rolling a 401(k) into a roth IRA disqualify an individual from the earned income credit if their actual earnings are within the income window?"</i></p>
+                                </div>
                             </div>
-</section>                    
+                        </div>
+                    </section>                    
 
                 </div> 
             </div><!-- start 12 columns div end-->
@@ -141,9 +119,9 @@ and open the template in the editor.
 
         <footer>
             <div class="row">
-                
+
                 <div class="small-12 large-12 columns">
-                    <p> © 2013 Pay Tax. All rights reserved.</p>
+                    <p>&copy;2013 Pay Tax. All rights reserved.</p>
                 </div>
             </div>
         </footer>
