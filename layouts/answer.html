@@ -1,13 +1,9 @@
-<!--
-To change this template, choose Tools | Templates
-and open the template in the editor.
--->
+
 <!DOCTYPE html>
 <html>
     <head>
         <title>SecureTax-Discussion</title>
-         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <meta name="viewport" content="width=device-width" />
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/foundation.css" />
@@ -15,6 +11,23 @@ and open the template in the editor.
         <link rel="stylesheet" href="css/app.css" />
         <link rel ="stylesheet" href ="css/layout.css">
         <script type="text/javascript" src="tinymce/js/tinymce/tinymce.min.js"></script>
+        <script src="js/vendor/custom.modernizr.js"></script>
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/foundation/foundation.js"></script>
+        <script src="js/foundation/foundation.section.js"></script>
+        <script src="js/vendor/customer.js"></script>
+        <script src="js/foundation/foundation.reveal.js"></script>
+        <script type="text/javascript" src="tinymce/js/tinymce/tinymce.min.js"></script>
+        <script>
+            document.write('<script src=/js/vendor/'
+                    + ('__proto__' in {} ? 'zepto' : 'jquery')
+                    + '.js><\/script>');
+        </script>
+
+
+        <script>
+            $(document).foundation();
+        </script>
         <script>
             tinymce.init({
                 selector: "textarea",
@@ -30,18 +43,17 @@ and open the template in the editor.
             <div class="row">
                 <div class="small-12 large-12 columns">
                     <nav class="top-bar-section">
-                        <img src ="http://placehold.it/250x45&text=sitename" />
-                        <ul class="inline-list right ">
-                            <li><a href="#">Hello vino</a></li>
+                        <span class="site-name">THE AUDITOR</span>
+                        <ul class="inline-list right">
                             <li><a href="#">Contact Us</a></li>
                             <li><a href="home.html">Logout</a></li>
                         </ul>
-
+                        <div class="right">
+                            <span class="name-label">Hello vinotha</span>
+                        </div>
                     </nav>
                 </div>  
-                <div class="small-12 large-12 columns">
-                    <hr>
-                </div>
+
             </div>
 
         </header>   
@@ -50,69 +62,80 @@ and open the template in the editor.
             <div class="small-12 large-12 columns" >
                 <ul class="inline-list">
                     <li><a href="consultant.html">Home</a>
-                    
                     <li><a href="customer.html">Customer</a> 
                     <li><a href="router.html">Router</a>
-                        <li><a href="admin.html">Admin</a>
-    
+                    <li><a href="admin.html">Admin</a>
                 </ul>
             </div>
 
         </div>
-        <div class="row">
+        <div class="row content-wrapper">
             <div class="small-12 large-12 columns">
-                <h3>Does rolling a 401(k) into a roth IRA disqualify an individual from the earned income credit if their actual earnings are within the income window?</h3>
-                <hr>
-            </div>
-            <div class="small-12 large-12 columns">
-                <h3>Discussion</h3>
-                <hr>
-            </div>
-            <div class="small-12 large-12 columns">
-                <div style="border-bottom:1px solid #DDDDDD ">
-                    <p><b>Posted by vino</b> on <i>27th Nov 2013</i> </p>
-                    <p> No, earned income only includes all the taxable income and wages you get from working or from certain disability payments. Earned income does not include retirement, pay received for work while an inmate in a penal institution, interest and dividends, social security, unemployment benefits, alimony or child support as referenced in IRS Publication 596.</p>
+                <div class="section-container tabs section-login" data-section>
+
+                    <section class="active">
+                        <p class="title" data-section-title><a href="#">Home</a></p>
+                        <div class="content" data-section-content>
+                            <div class="row">
+                                <div class="small-12 large-12 columns">
+                                    <h3>Discussion</h3>
+                                    <hr>
+                                </div>
+                                <div class="small-12 large-12 columns">
+                                    <h3>Does rolling a 401(k) into a roth IRA disqualify an individual from the earned income credit if their actual earnings are within the income window?</h3>
+                                    <hr>
+                                </div>
+
+                                <div class="small-12 large-12 columns ">
+                                    <div class="answer">
+                                        <p><b>Posted by vino</b> on <i>27th Nov 2013</i> </p>
+                                        <p> No, earned income only includes all the taxable income and wages you get from working or from certain disability payments. Earned income does not include retirement, pay received for work while an inmate in a penal institution, interest and dividends, social security, unemployment benefits, alimony or child support as referenced in IRS Publication 596.</p>
+                                    </div>
+                                </div>
+                                <div class="small-12 large-12 columns" >
+                                    <div class="answer-alt">
+                                        <p><b>Posted by vino</b> on <i>27th Nov 2013</i> </p>
+                                        <p> No, earned income only includes all the taxable income and wages you get from working or from certain disability payments. Earned income does not include retirement, pay received for work while an inmate in a penal institution, interest and dividends, social security, unemployment benefits, alimony or child support as referenced in IRS Publication 596.</p>
+                                    </div>
+
+                                </div>
+
+
+                                <div class="small-12 large-12 columns">
+                                    <h5>Reply</h5>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class=" small-10 large-10 columns">
+                                    <textarea placeholder="write your reply..."></textarea><br>
+                                </div>
+                            </div>
+
+                            <label>Attachment</label><br>
+
+                            <div class="row">
+                                <div class="small-6 large-6 columns">
+                                    <input type="file">
+                                </div>
+                                <div class="pull-3 small-6 large-6 columns">
+                                    <button class="small but">Upload</button>
+                                </div>
+                                <div class="small-12 large-12 columns category" >
+                                    <a href="answer-with-message.html"> <button class="but-blue">Post</button></a>
+                                </div>
+                            </div>
+                        </div>    
+                    </section>
                 </div>
-            </div>
-            <div class="small-12 large-12 columns" >
-                <div style="border-bottom:1px solid #DDDDDD;position:relative;margin-top:20px;background-color: #EEF8F1 ">
-                    <p><b>Posted by vino</b> on <i>27th Nov 2013</i> </p>
-                    <p> No, earned income only includes all the taxable income and wages you get from working or from certain disability payments. Earned income does not include retirement, pay received for work while an inmate in a penal institution, interest and dividends, social security, unemployment benefits, alimony or child support as referenced in IRS Publication 596.</p>
-                </div>
-
-            </div>
-
-
-            <div class="small-12 large-12 columns">
-                <h5>Reply</h5>
-            </div>
-
-            <div class=" small-10 large-10 columns">
-                <textarea style="height:120px" placeholder="write your reply..."></textarea><br>
-            </div>
-            <div class="small-12 large-12 columns">
-                <label>Attachment</label><br>
-            </div>
-            <div class="small-6 large-6 columns">
-                <input type="file">
-            </div>
-            <div class="pull-3 small-6 large-6 columns">
-                <button class="small">Upload</button>
-            </div>
-            <div class="small-12 large-12 columns" style="margin-top:20px;position:relative">
-               <a href="answer-with-message.html"> <button>Post</button></a>
             </div>
         </div>
-
         <footer>
             <div class="row">
-                <div class="large-12 small-12 columns">
-                    <hr>
-                </div>
+
                 <div class="small-12 large-12 columns">
-                    <p> © 2013 Pay Tax. All rights reserved.</p>
+                    <p> &copy;2013 Pay Tax. All rights reserved.</p>
                 </div>
             </div>
         </footer>
-
+    </body>
 </html>

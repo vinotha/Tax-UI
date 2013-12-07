@@ -319,6 +319,15 @@ root {
     border-radius:4px;
 
 }
+.answer {
+    border-bottom:1px solid #DDDDDD;
+}
+.answer-alt {
+    border-bottom:1px solid #DDDDDD;
+    position:relative;
+    margin-top:20px;
+    background-color: #EEF8F1;
+}
 .top-bar-section ul {
     background:transparent;
 }
