@@ -1,12 +1,12 @@
-<!--<!--
+<!--
 To change this template, choose Tools | Templates
 and open the template in the editor.
 -->
 <!DOCTYPE html>
 <html>
     <head>
-        <title>SecureTax-edit category with message</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Edit Category</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
         <meta name="viewport" content="width=device-width" />
         <!-- If you are using CSS version, only link these 2 files, you may add app.css to use for your overrides if you like. -->
         <link rel="stylesheet" href="css/normalize.css" />
@@ -14,148 +14,106 @@ and open the template in the editor.
         <!-- If you are using the gem version, you need this only -->
         <link rel="stylesheet" href="css/app.css" />
         <link rel ="stylesheet" href ="css/layout.css">
+
+        <script src="js/vendor/custom.modernizr.js"></script>
+        <script src="js/vendor/jquery.js"></script>
+        <script src="js/foundation/foundation.js"></script>
+        <script src="js/foundation/foundation.section.js"></script>
+        <script src="js/vendor/customer.js"></script>
+        <script src="js/foundation/foundation.reveal.js"></script>
+        <script type="text/javascript" src="tinymce/js/tinymce/tinymce.min.js"></script>
+        <script>
+            document.write('<script src=/js/vendor/'
+                    + ('__proto__' in {} ? 'zepto' : 'jquery')
+                    + '.js><\/script>');
+        </script>
+
+
+        <script>
+            $(document).foundation();
+        </script>
+
+        <script>
+            tinymce.init({
+                selector: "textarea",
+                menubar: false,
+                statusbar: false
+            });
+        </script>
+
+
     </head>
-
-    <header>
-        <div class="row">
-            <div class="small-12 large-12 columns">
-                <nav class="top-bar-section">
-                    <img src ="http://placehold.it/250x45&text=sitename" />
-                    <ul class="inline-list right ">
-                        <li><a href="#">Hello vino</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="home.html">Logout</a></li>
-                    </ul>
-
-                </nav>
-            </div>  
-            <div class="small-12 large-12 columns">
-                <hr>
-            </div>
-        </div>
-
-    </header>
     <body>
+        <header>
+            <div class="row">
+                <div class="small-12 large-12 columns">
+                    <nav class="top-bar-section">
+                        <span class="site-name">THE AUDITOR</span>
+                        <ul class="inline-list right ">
 
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="home.html">Logout</a></li>
+                        </ul>
+                        <div class="right">
+                            <span class="name-label">Hello vinotha</span>
+                        </div>
+                    </nav>
+                </div>  
+
+            </div>
+        </header>
         <div class="row">
-            <div class="small-12 large-12 columns">
-                <p style="color:green">your category edited successfully. </p>
-                </div>
-            <div class="small-12 large-12 columns menu" >
+            <div class="small-12 large-12 columns" >
                 <ul class="inline-list">
                     <li><a href="admin.html">Home</a>
-                    <li><a href="category.html">Category</a>
-                    <li><a href="people.html">People</a>
-
+                   
                 </ul>
             </div>
-        </div>
-        <div class="row">
-            <div class="small-6 large-6 columns">
-                <h4>Category</h4>
-            </div>
 
-
-            <div class="small-12 large-12 columns ">
-                <table>
-                    <thead>
-
-
-                        <tr> 
-                            <th>
-                                Category 
-                            </th>
-                            <th width="10">
-                                Points
-                            </th>
-                            <th width="150">
-                                Created Date
-                            </th>
-                            <th width="150">
-                                Modified Date
-                            </th>
-                            <th>
-                                Created by
-                            </th>
-                            <th>Edit/Delete</th>
-                        </tr>
-                    </thead>
-                     <tr>
-                        <td>category 5</td>
-                        <td>12</td>
-                        <td>29th Nov 2013</td>
-                        <td>None</td>
-                        <td>admin</td>
-                        <td id="edit-delete"><a href="#">edit</a>/<a href="#">delete</a></td>
-
-                    </tr>
-                    <tr>
-                        <td>category 1</td>
-                        <td>15</td>
-                        <td>29th Nov 2013</td>
-                        <td>None</td>
-                        <td>admin</td>
-                        <td id="edit-delete"><a href="#">edit</a>/<a href="#">delete</a></td>
-
-                    </tr>
-                    <tr>
-                        <td>category 2</td>
-                        <td>12</td>
-                        <td>23th Nov 2013</td>
-                        <td>28th Nov 2013</td>
-                        <td>ad7in</td>
-                        <td id="edit-delete"><a href="#">edit</a>/<a href="#">delete</a></td>
-                    </tr>
-                    <tr>
-                        <td>category 3</td>
-                        <td>12</td>
-                        <td>27th Nov 2013</td>
-                        <td>None</td>
-                        <td>admin</td>
-                        <td id="edit-delete"><a href="#">edit</a>/<a href="#">delete</a></td>
-                    </tr>
-                    <tr>
-                        <td>category 4</td>
-                        <td>12</td>
-                        <td>27th Nov 2013</td>
-                        <td>None</td>
-                        <td>admin</td>
-                        <td id="edit-delete"><a href="#">edit</a>/<a href="#">delete</a></td>
-                    </tr>
-                    <tbody>
-
-                </table>
-
-            </div>
-        </div>
-        <div class="row">
-            <div class="small-12 large-12 columns">
-                <hr>
-            </div>
-            <div class="large-12 small-12 columns">
-                <h4>Add New category</h4><br>
-            </div>
-            <div class="small-12 large-12 columns">
-                <label>Category Name</label><br>
-                <input style="width:200px" type="text" placeholder="Type your category name"><br>
-                <label>Points</label><br>
-                <input style="width:200px" type="text" placeholder="Type your points"><br>
-                <button class="small">submit</button>
-            </div>
         </div>
 
-    
-    <footer>
-        <div class="row">
-            <div class="large-12 small-12 columns">
-                <hr>
+
+        <div class="row content-wrapper"> <!-- start row div -->
+            <div class="small-12 large-12 columns">  <!-- start div with 12 columns -->
+                <div class="section-container auto section-login" data-section>
+                    
+
+
+                    <section class="active">
+                        <p class="title" data-section-title><a href="admin.html">Edit Category</a></p>
+                        <div class="content" data-section-content>
+                            <div class="row">
+                                <div class="small-12 large-12 columns">
+                                    <p class="message">your category edited successfully. </p>
+                                </div>
+                                <div class="large-12 small-12 columns">
+                                    <h4>Edit category</h4><br>
+                                </div>
+                                <div class="small-12 large-12 columns">
+                                    <label>Category Name</label><br>
+                                    <input style="width:200px" type="text" value="category 1"><br>
+                                    <label>Points</label><br>
+                                    <input style="width:200px" type="text" value="15"><br>
+                                    <a href="edit-category-with-message.html">   <button class="small but-blue">submit</button></a>
+                                </div>
+                            </div>
+
+                        </div>  
+
+                    </section>
+
+                </div> 
+            </div><!-- start 12 columns div end-->
+        </div><!-- start row end -->
+
+        <footer>
+            <div class="row">
+
+                <div class="small-12 large-12 columns">
+                    <span> &copy;2013 Pay Tax. All rights reserved.</span>
+                </div>
             </div>
-            <div class="small-12 large-12 columns">
-                <p> © 2013 Pay Tax. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-        </body>
+        </footer>
+    </body>
+
 </html>
-
-

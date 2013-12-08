@@ -53,12 +53,14 @@ body {
     position:relative;
 }
 .question {
-    font-family: "AvenirNextLTW02-Regular","Helvetica Neue",Helvetica,Arial,Sans-serif;
+    
     line-height: 25px;
     font-size:16px;
-    color:#71695A;
+    
 }
-
+.message {
+    color:green;
+}
 a:link {
     color:#5C7479;
 }
@@ -225,7 +227,7 @@ textarea {
     min-height: 30px;
     font-size:16px;
 }
-.section-container.tabs > section > .content, .section-container.tabs > .section > .content {
+.section-container.auto > section > .content, .section-container.auto > .section > .content {
     border:3px solid Grey;
 
 }
