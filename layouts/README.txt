@@ -1,9 +1,7 @@
 THE AUDITOR
 ____________
 
-This project provides the answer to your doubts about Tax. In that first you will buy some points and ask your doubts.
-
-
+This project provides the answer to your doubts about Tax. In that first you will buy some points and ask your question.
 
 Contents
 ________
@@ -54,6 +52,7 @@ It has three tabs.
 * Home
 * Services
 * About
+
  Home
  -----
     Click login button, it will go to customer page.
@@ -90,7 +89,7 @@ It has two tabs
 
  Home
  ----
-    click send button it will display with successfull message.
+    click send button it will display with success message.
 
 Admin
 -----
@@ -100,4 +99,21 @@ It has four tabs.
 * Manage People
 * Activities
 
- 
+ Manage Categories:
+ ------------------
+    * Click add button it will display with success message as like "added your category successfully."
+    * Click edit link it will display with edit page.In this click submit button it display with success message.
+    * Click delete link it will display the modal window and with confirm message. 
+
+ Manage People:
+ --------------
+    
+    * Click Add New people it will display the form. In that click submit button it will show success message.
+    * Click edit link it also display the form with name and username already showed.
+    * Click delete link it will display the modal window with confirm message.
+Common Settings:
+----------------
+
+* Questions are link.
+* If click logout, it will go to home page.
+
