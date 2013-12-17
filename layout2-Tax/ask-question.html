@@ -3,6 +3,8 @@ To change this template, choose Tools | Templates
 and open the template in the editor.
 -->
 <!DOCTYPE html>
+
+<!DOCTYPE html>
 <html>
     <head>
         <title>Page</title>
@@ -36,7 +38,7 @@ and open the template in the editor.
         <header>
             <div class="row">
                 <div class="large-5 columns">
-                    <h2><span id="site-name"><a href="home.html"> THE AUDITOR</a></span></h2>
+                    <h2><span id="site-name"><a href="home.html">THE AUDITOR</a></span></h2>
 
                 </div> 
                 <div class="large-5 columns">
@@ -67,57 +69,62 @@ and open the template in the editor.
 
                 <div class="large-12 columns content">
                     <div class="large-12 columns">
-                        <h2>Questions</h2>
+                        <h2>Ask Question</h2>
+                    </div>
+                    <div class="row">
+                        <div class="large-10 columns">
+
+                            <label>Question</label><br>
+                            <textarea  placeholder="Enter your question here"></textarea><br>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="large-5 columns" >
+                            <label> Category</label><br>
+
+                            <select> 
+                                <option  id="sel" selected="selected" value="Choose ">choose your category</option>
+                                <option  id="cat1">Category 1</option>
+                                <option  id="cat2">Category 2</option>
+                                <option id="cat3">Category 3</option>
+                                <option  id="cat4">Category 4</option>
+                                <option  id="cat5">Category 5</option>
+                            </select>
+                        </div>
+
+
+                        <div class="large-3 columns" >
+                            <label> Points</label><br>
+                            <span id="points">0</span>
+                        </div>
+
+
+                        <div class="large-4 columns">
+
+                        </div>
+
                     </div>
 
-                    <table>
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th >Questions</th>
+                    <div class="row ">
+                        <div class="large-12 columns" >
+                            <form>
 
-                                <th class="asked-on">Asked on</th>
-                                <th class="asked-on">Asked By</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><span class="new">new</span></td>
-                                <td><p><a href="answer.html">Does rolling a 401(k) into a roth IRA disqualify an individual from the earned income credit if their actual earnings are within the income window?</a></p></td>
+                                <label >Select & upload file</label><br>
 
-                                <td>12th Nov 2013</td>
-                                <td>vino</td>
-                            </tr>
-                            <tr class="tablerw">
-                                <td><span class="new">new</span></td>
-                                <td><p><a href="#">What is standard deduction?</a></p></td>
+                                <input type="file" multiple> 
+                                <button class="small but">Upload</button>
 
-                                <td>12th Nov 2013</td>
-                                <td>vino</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td><p><a href="#">Does the NRI have to pay property tax if they buy property in India? Can a person fill a NRI in a Income tax form if he has been out of India for six months though he is Indian citizen?</a></p></td>
+                            </form>
 
-                                <td>12th Nov 2013</td>
-                                <td>vino</td>
-                            </tr>
-                            <tr class="tablerw">
-                                <td></td>
-                                <td><p><a href="#">Does the NRI have to pay property tax if they buy property in India? Can a person fill a NRI in a Income tax form if he has been out of India for six months though he is Indian citizen?</a></p></td>
+                        </div>
+                    </div>
+                    <div class="row ">
 
-                                <td>12th Nov 2013</td>
-                                <td>vino</td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td><p><a  href="#">This is longer content Donec id elit non mi porta gravida at eget metus.</a></p></td>
+                        <div class="large-12 columns"  >
+                            <a href="create-question-with-message.html"> <button class="small but-blue">Ask</button></a>
+                        </div>
+                    </div>
 
-                                <td>12th Nov 2013</td>
-                                <td>vino</td>
-                            </tr>
-                        </tbody>
-                    </table>
                 </div>
             </div>
         </div>
@@ -130,7 +137,6 @@ and open the template in the editor.
                 </div>
             </div>
         </footer>
-
 
     </body>
 </html>
