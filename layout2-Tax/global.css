@@ -1,0 +1,43 @@
+a:link {
+    color:#3A3A3A;
+}
+.about {
+    border:1px solid #DDDDDD;
+    border-radius:10px;
+    box-shadow: 4px 4px 2px #DDDDDD;
+
+}
+.first {
+    font-size:25px;
+    font-weight: bold;
+}
+.feature {
+    margin-bottom:20px;
+    border-bottom:1px solid grey;
+    position:relative;
+}
+header {
+    margin-top:20px;
+    position:relative;
+}
+.content {
+    margin-top:50px;
+    position:relative;
+    border:10px solid #C5C5C5;
+    border-radius:18px;
+}
+.asked-on {
+    width:120px;
+}
+.tablerw {
+    background-color:#F0F0EE!important;
+}
+.new {
+    text-transform: uppercase;
+}
+tr {
+    border-bottom:1px solid black;
+}
+p {
+    font-size:19px;
+}
